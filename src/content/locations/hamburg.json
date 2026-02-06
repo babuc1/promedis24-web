@@ -1,22 +1,23 @@
 {
   "city": "Hamburg",
   "slug": "hamburg",
-  "address": "Jungfernstieg 30, 20354 Hamburg",
-  "phone": "040-55667788",
+  "address": "Große Bleichen 1, 20354 Hamburg",
+  "phone": "040-30099780",
   "email": "hamburg@promedis24.de",
   "areaManager": {
-    "name": "Anna Meyer",
-    "title": "Area Manager Hamburg",
-    "image": "/images/team/anna-meyer.jpg"
+    "name": "N.N.",
+    "title": "Area Manager – Region Nord",
+    "image": "/images/team/placeholder.jpg"
   },
   "coordinates": {
-    "lat": 53.5511,
-    "lng": 9.9937
+    "lat": 53.5539,
+    "lng": 9.9901
   },
+  "region": "Norden",
   "benefits": [
     "uebertarifliche-bezahlung",
-    "persoenlicher-ansprechpartner",
+    "unbefristete-festanstellung",
     "wunsch-dienstplan"
   ],
-  "testimonials": ["test-4"]
+  "testimonials": ["sarah-erzieherin"]
 }

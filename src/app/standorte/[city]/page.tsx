@@ -8,11 +8,23 @@ import { Section, Card, Button, Grid } from "@/components/ui";
 import berlinData from "@/content/locations/berlin.json";
 import muenchenData from "@/content/locations/muenchen.json";
 import hamburgData from "@/content/locations/hamburg.json";
+import nuernbergData from "@/content/locations/nuernberg.json";
+import koelnData from "@/content/locations/koeln.json";
+import duesseldorfData from "@/content/locations/duesseldorf.json";
+import frankfurtData from "@/content/locations/frankfurt.json";
+import leipzigData from "@/content/locations/leipzig.json";
+import friedrichshafenData from "@/content/locations/friedrichshafen.json";
 
 const locationsMap: Record<string, typeof berlinData> = {
   berlin: berlinData,
   muenchen: muenchenData,
   hamburg: hamburgData,
+  nuernberg: nuernbergData,
+  koeln: koelnData,
+  duesseldorf: duesseldorfData,
+  frankfurt: frankfurtData,
+  leipzig: leipzigData,
+  friedrichshafen: friedrichshafenData,
 };
 
 export async function generateStaticParams() {

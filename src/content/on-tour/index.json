@@ -1,0 +1,114 @@
+{
+  "hero": {
+    "headline": "ON TOUR",
+    "subline": "Arbeite, wo Deutschland am schönsten ist.",
+    "description": "Mit dem On-Tour-Programm von Promedis24 arbeitest du bundesweit in wechselnden Einrichtungen – vom Nordseestrand bis zum Alpenrand. Reisekosten, Unterkunft und ein attraktives Gehalt inklusive."
+  },
+  "benefits": [
+    {
+      "title": "Unterkunft gestellt",
+      "description": "Wir organisieren und bezahlen deine Unterkunft am Einsatzort. Du musst dich um nichts kümmern.",
+      "icon": "Home"
+    },
+    {
+      "title": "Reisekosten übernommen",
+      "description": "An- und Abreise gehen auf uns. Ob Bahn, Auto oder Flug – wir finden die beste Lösung.",
+      "icon": "Plane"
+    },
+    {
+      "title": "Übertarifliches Gehalt",
+      "description": "On-Tour-Einsätze werden überdurchschnittlich vergütet. Plus Zulagen für Schicht, Wochenende und Feiertage.",
+      "icon": "Euro"
+    },
+    {
+      "title": "Flexibler Rhythmus",
+      "description": "Du bestimmst den Takt: 2 Wochen, 4 Wochen, 3 Monate – wir passen uns deinem Leben an.",
+      "icon": "Calendar"
+    },
+    {
+      "title": "Persönliche Betreuung",
+      "description": "Dein Ansprechpartner kennt dich und deine Wünsche. Erreichbar, wenn du uns brauchst – auch unterwegs.",
+      "icon": "UserCheck"
+    },
+    {
+      "title": "Neue Erfahrungen",
+      "description": "Verschiedene Einrichtungen, verschiedene Teams, verschiedene Städte. Dein Horizont wächst mit jedem Einsatz.",
+      "icon": "MapPin"
+    }
+  ],
+  "howItWorks": [
+    {
+      "step": 1,
+      "title": "Bewirb dich",
+      "description": "In 60 Sekunden online bewerben. Sag uns, welche Bereiche und Regionen dich interessieren."
+    },
+    {
+      "step": 2,
+      "title": "Persönliches Gespräch",
+      "description": "Dein Ansprechpartner lernt dich kennen – deine Qualifikation, deine Wünsche, deinen Rhythmus."
+    },
+    {
+      "step": 3,
+      "title": "Einsatz planen",
+      "description": "Wir finden den perfekten Einsatzort. Unterkunft und Reise werden organisiert, bevor du loslegst."
+    },
+    {
+      "step": 4,
+      "title": "Loslegen & genießen",
+      "description": "Arbeite in einer neuen Stadt, lerne neue Teams kennen – und genieße deine Freizeit vor Ort."
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Patrick K.",
+      "role": "Intensivpfleger",
+      "quote": "Mit dem Bulli am Meer sein und meine Family – das macht mich glücklich. Unter der Woche verschiedene Kliniken, am Wochenende gehöre ich meiner Frau und Tochter.",
+      "location": "Bundesweit"
+    },
+    {
+      "name": "Sarah M.",
+      "role": "Erzieherin",
+      "quote": "Ich wollte Deutschland kennenlernen und gleichzeitig arbeiten. Mit On-Tour habe ich in 8 Monaten 5 Städte gesehen – und überall tolle Teams gefunden.",
+      "location": "Hamburg → München → Berlin"
+    },
+    {
+      "name": "Thomas R.",
+      "role": "Altenpfleger",
+      "quote": "Nach 10 Jahren im selben Haus brauchte ich Abwechslung. On-Tour hat mir gezeigt, wie viele verschiedene Arbeitsweisen es gibt. Das hat mich als Fachkraft enorm weitergebracht.",
+      "location": "Norddeutschland"
+    }
+  ],
+  "destinations": [
+    { "city": "Hamburg", "region": "Norden", "lat": 53.5511, "lng": 9.9937 },
+    { "city": "Berlin", "region": "Osten", "lat": 52.5200, "lng": 13.4050 },
+    { "city": "München", "region": "Süden", "lat": 48.1351, "lng": 11.5820 },
+    { "city": "Köln", "region": "Westen", "lat": 50.9375, "lng": 6.9603 },
+    { "city": "Düsseldorf", "region": "Westen", "lat": 51.2277, "lng": 6.7735 },
+    { "city": "Nürnberg", "region": "Süden", "lat": 49.4521, "lng": 11.0767 },
+    { "city": "Frankfurt", "region": "Mitte", "lat": 50.1109, "lng": 8.6821 },
+    { "city": "Leipzig", "region": "Osten", "lat": 51.3397, "lng": 12.3731 },
+    { "city": "Friedrichshafen", "region": "Süden", "lat": 47.6543, "lng": 9.4801 }
+  ],
+  "faq": [
+    {
+      "question": "Muss ich ständig unterwegs sein?",
+      "answer": "Nein. Du bestimmst den Rhythmus. Manche Talents machen 2-Wochen-Einsätze, andere bleiben 3 Monate an einem Ort. Zwischen den Einsätzen bist du zuhause."
+    },
+    {
+      "question": "Wer bezahlt die Unterkunft?",
+      "answer": "Promedis24 übernimmt die kompletten Kosten für deine Unterkunft am Einsatzort. Du bekommst ein möbliertes Apartment oder Hotelzimmer."
+    },
+    {
+      "question": "Kann ich mir die Region aussuchen?",
+      "answer": "Ja. Du sagst uns, wo du arbeiten möchtest – oder wo nicht. Wir machen keine Einsätze gegen deinen Willen."
+    },
+    {
+      "question": "Bin ich trotzdem fest angestellt?",
+      "answer": "Ja. Du hast einen unbefristeten Arbeitsvertrag bei Promedis24 – mit allen Vorteilen einer Festanstellung."
+    },
+    {
+      "question": "Für welche Berufe ist On-Tour möglich?",
+      "answer": "Für alle Bereiche, in denen Promedis24 aktiv ist: Pflege (Alten- und Krankenpflege), Pädagogik (Erzieher:innen, Sozialpädagog:innen) und Medizin (MFA, OTA)."
+    }
+  ]
+}

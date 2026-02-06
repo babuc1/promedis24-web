@@ -1,17 +1,17 @@
 {
-  "city": "München",
-  "slug": "muenchen",
-  "address": "Barthstr. 22, 80339 München",
-  "phone": "089-41617330",
-  "email": "muenchen@promedis24.de",
+  "city": "Nürnberg",
+  "slug": "nuernberg",
+  "address": "Fürther Str. 27, 90429 Nürnberg",
+  "phone": "0911-47885960",
+  "email": "nuernberg@promedis24.de",
   "areaManager": {
     "name": "N.N.",
     "title": "Area Manager – Region Süd",
     "image": "/images/team/placeholder.jpg"
   },
   "coordinates": {
-    "lat": 48.1327,
-    "lng": 11.5385
+    "lat": 49.4539,
+    "lng": 11.0775
   },
   "region": "Süden",
   "benefits": [
@@ -19,5 +19,5 @@
     "unbefristete-festanstellung",
     "wunsch-dienstplan"
   ],
-  "testimonials": ["awo-muenchen"]
+  "testimonials": ["thomas-altenpfleger", "klinikum-nuernberg"]
 }

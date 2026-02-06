@@ -1,0 +1,23 @@
+{
+  "city": "Frankfurt",
+  "slug": "frankfurt",
+  "address": "Mainzer Landstr. 33, 60329 Frankfurt",
+  "phone": "069-25628980",
+  "email": "frankfurt@promedis24.de",
+  "areaManager": {
+    "name": "N.N.",
+    "title": "Area Manager – Region Mitte",
+    "image": "/images/team/placeholder.jpg"
+  },
+  "coordinates": {
+    "lat": 50.1095,
+    "lng": 8.6625
+  },
+  "region": "Mitte",
+  "benefits": [
+    "uebertarifliche-bezahlung",
+    "unbefristete-festanstellung",
+    "wunsch-dienstplan"
+  ],
+  "testimonials": []
+}

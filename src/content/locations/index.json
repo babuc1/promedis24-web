@@ -1,0 +1,94 @@
+{
+  "locations": [
+    {
+      "city": "Berlin",
+      "slug": "berlin",
+      "address": "Kurfürstendamm 194, 10707 Berlin",
+      "phone": "030-3117981-03",
+      "email": "berlin@promedis24.de",
+      "areaManager": { "name": "Franciska Morawa", "title": "Area Managerin – Region Ost" },
+      "coordinates": { "lat": 52.5006, "lng": 13.3122 },
+      "region": "Osten"
+    },
+    {
+      "city": "Hamburg",
+      "slug": "hamburg",
+      "address": "Große Bleichen 1, 20354 Hamburg",
+      "phone": "040-30099780",
+      "email": "hamburg@promedis24.de",
+      "areaManager": { "name": "N.N.", "title": "Area Manager – Region Nord" },
+      "coordinates": { "lat": 53.5539, "lng": 9.9901 },
+      "region": "Norden"
+    },
+    {
+      "city": "München",
+      "slug": "muenchen",
+      "address": "Barthstr. 22, 80339 München",
+      "phone": "089-41617330",
+      "email": "muenchen@promedis24.de",
+      "areaManager": { "name": "N.N.", "title": "Area Manager – Region Süd" },
+      "coordinates": { "lat": 48.1327, "lng": 11.5385 },
+      "region": "Süden"
+    },
+    {
+      "city": "Nürnberg",
+      "slug": "nuernberg",
+      "address": "Fürther Str. 27, 90429 Nürnberg",
+      "phone": "0911-47885960",
+      "email": "nuernberg@promedis24.de",
+      "areaManager": { "name": "N.N.", "title": "Area Manager – Region Süd" },
+      "coordinates": { "lat": 49.4539, "lng": 11.0775 },
+      "region": "Süden"
+    },
+    {
+      "city": "Köln",
+      "slug": "koeln",
+      "address": "Konrad-Adenauer-Ufer 21, 50668 Köln",
+      "phone": "0221-29266300",
+      "email": "koeln@promedis24.de",
+      "areaManager": { "name": "Guido Wollsiefer", "title": "ppa. Area Manager – Region West" },
+      "coordinates": { "lat": 50.9438, "lng": 6.9647 },
+      "region": "Westen"
+    },
+    {
+      "city": "Düsseldorf",
+      "slug": "duesseldorf",
+      "address": "Friedrichstr. 18, 40217 Düsseldorf",
+      "phone": "0211-93674050",
+      "email": "duesseldorf@promedis24.de",
+      "areaManager": { "name": "Guido Wollsiefer", "title": "ppa. Area Manager – Region West" },
+      "coordinates": { "lat": 51.2150, "lng": 6.7767 },
+      "region": "Westen"
+    },
+    {
+      "city": "Frankfurt",
+      "slug": "frankfurt",
+      "address": "Mainzer Landstr. 33, 60329 Frankfurt",
+      "phone": "069-25628980",
+      "email": "frankfurt@promedis24.de",
+      "areaManager": { "name": "N.N.", "title": "Area Manager – Region Mitte" },
+      "coordinates": { "lat": 50.1095, "lng": 8.6625 },
+      "region": "Mitte"
+    },
+    {
+      "city": "Leipzig",
+      "slug": "leipzig",
+      "address": "Brühl 52, 04109 Leipzig",
+      "phone": "0341-35569380",
+      "email": "leipzig@promedis24.de",
+      "areaManager": { "name": "Franciska Morawa", "title": "Area Managerin – Region Ost" },
+      "coordinates": { "lat": 51.3406, "lng": 12.3747 },
+      "region": "Osten"
+    },
+    {
+      "city": "Friedrichshafen",
+      "slug": "friedrichshafen",
+      "address": "Karlstr. 31, 88045 Friedrichshafen",
+      "phone": "07541-9536380",
+      "email": "friedrichshafen@promedis24.de",
+      "areaManager": { "name": "N.N.", "title": "Area Manager – Region Süd" },
+      "coordinates": { "lat": 47.6543, "lng": 9.4801 },
+      "region": "Süden"
+    }
+  ]
+}

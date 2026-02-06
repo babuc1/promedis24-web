@@ -1,0 +1,23 @@
+{
+  "city": "Düsseldorf",
+  "slug": "duesseldorf",
+  "address": "Friedrichstr. 18, 40217 Düsseldorf",
+  "phone": "0211-93674050",
+  "email": "duesseldorf@promedis24.de",
+  "areaManager": {
+    "name": "Guido Wollsiefer",
+    "title": "ppa. Area Manager – Region West",
+    "image": "/images/team/guido-wollsiefer.jpg"
+  },
+  "coordinates": {
+    "lat": 51.2150,
+    "lng": 6.7767
+  },
+  "region": "Westen",
+  "benefits": [
+    "uebertarifliche-bezahlung",
+    "unbefristete-festanstellung",
+    "wunsch-dienstplan"
+  ],
+  "testimonials": []
+}

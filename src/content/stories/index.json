@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "headline": "ECHTE GESCHICHTEN",
+    "subline": "Von Menschen, die ihren Job lieben.",
+    "description": "Keine Werbeversprechen. Keine geschönten Zitate. Echte Stimmen von Talents und Einrichtungen, die mit Promedis24 arbeiten."
+  },
+  "stories": [
+    {
+      "id": "patrick-intensivpfleger",
+      "name": "Patrick K.",
+      "role": "Intensivpfleger",
+      "bereich": "Pflege",
+      "since": "2024",
+      "location": "Bundesweit (On-Tour)",
+      "quote": "Mit dem Bulli am Meer sein und meine Family – das macht mich glücklich.",
+      "story": "Patrick ist Intensivpfleger mit Leib und Seele. Aber nach Jahren im selben Krankenhaus war die Luft raus – nicht wegen der Arbeit, sondern wegen der Rahmenbedingungen. Starre Dienstpläne, Einspringen am Wochenende, keine Wertschätzung. Seit 2024 arbeitet er über Promedis24 im On-Tour-Programm. Unter der Woche verschiedene Kliniken, am Wochenende seine Frau und Tochter. Sein Fazit: \"Beste Entscheidung.\"",
+      "benefits": ["Wunsch-Dienstplan", "On-Tour-Programm", "Persönlicher Ansprechpartner", "Übertarifliche Bezahlung"],
+      "color": "turkis"
+    },
+    {
+      "id": "sarah-erzieherin",
+      "name": "Sarah M.",
+      "role": "Erzieherin",
+      "bereich": "Pädagogik",
+      "since": "2023",
+      "location": "Hamburg",
+      "quote": "Endlich ein Arbeitgeber, der versteht, dass ich auch ein Leben nach Feierabend habe.",
+      "story": "Sarah hat 6 Jahre in der gleichen Kita gearbeitet. Tolle Kinder, tolles Team – aber der Träger hat alles kaputt gemacht. Überstunden, Unterbesetzung, null Reaktion auf Beschwerden. Eine Freundin hat ihr Promedis24 empfohlen. Seit 2023 arbeitet Sarah in verschiedenen Hamburger Kitas und hat endlich das Gefühl, als Mensch und nicht als Personalnummer gesehen zu werden.",
+      "benefits": ["Flexible Arbeitszeiten", "Verschiedene Einrichtungen", "Geburtstagsfrei", "1€ Empfehlungsbonus"],
+      "color": "amethyst"
+    },
+    {
+      "id": "thomas-altenpfleger",
+      "name": "Thomas R.",
+      "role": "Altenpfleger",
+      "bereich": "Pflege",
+      "since": "2022",
+      "location": "Nürnberg",
+      "quote": "Ich verdiene jetzt mehr als mein ehemaliger Stationsleiter. Und habe weniger Stress.",
+      "story": "Thomas war 15 Jahre in der Altenpflege – fest angestellt, treu, zuverlässig. Und chronisch unterbezahlt. Ein Kollege hat ihm von Promedis24 erzählt. Thomas war skeptisch: Zeitarbeit hatte keinen guten Ruf. Aber nach dem ersten Gespräch war klar: Das hier ist anders. Übertarifliches Gehalt, unbefristeter Vertrag, ein Ansprechpartner der seinen Namen kennt. Seit 2022 ist er dabei und würde nie wieder zurückgehen.",
+      "benefits": ["Übertarifliche Bezahlung", "Unbefristete Festanstellung", "24/7 Erreichbarkeit", "Wertschätzung"],
+      "color": "turkis"
+    },
+    {
+      "id": "marina-sozialpaedagogin",
+      "name": "Marina L.",
+      "role": "Sozialpädagogin",
+      "bereich": "Pädagogik",
+      "since": "2023",
+      "location": "Köln",
+      "quote": "Promedis24 hat mir gezeigt, dass Zeitarbeit nicht das ist, was ich dachte.",
+      "story": "Marina hatte Vorurteile gegen Zeitarbeit. Unsicher, schlecht bezahlt, kein Zusammenhalt. Dann wurde sie arbeitslos und eine Bekannte schlug Promedis24 vor. \"Probier's einfach aus.\" Marina probierte – und blieb. Sie arbeitet jetzt in einer Jugendhilfe-Einrichtung in Köln, hat einen festen Vertrag und verdient besser als je zuvor. Am meisten schätzt sie den persönlichen Kontakt: \"Die rufen mich an und fragen, wie es mir geht. Nicht ob ich einspringen kann.\"",
+      "benefits": ["Persönlicher Ansprechpartner", "Festanstellung", "Faire Bezahlung", "Echte Wertschätzung"],
+      "color": "amethyst"
+    },
+    {
+      "id": "awo-muenchen",
+      "name": "AWO München",
+      "role": "Träger der Sozialwirtschaft",
+      "bereich": "Einrichtung",
+      "since": "2021",
+      "location": "München",
+      "quote": "Mit Promedis24 haben wir einen Partner, der unsere Branche versteht – nicht nur unsere Schichten füllt.",
+      "story": "Die AWO München kämpfte wie viele Träger mit dem Fachkräftemangel. Mehrere Personaldienstleister kamen und gingen – keiner verstand die Besonderheiten der Sozialwirtschaft. Seit 2021 arbeiten sie mit Promedis24 zusammen. Der Unterschied: Promedis24 schickt nicht einfach Personal, sondern Fachkräfte, die wirklich passen. \"Die nehmen sich Zeit für das Matching. Das merkt man in der Qualität.\"",
+      "benefits": ["Spezialisierung Gesundheits- & Sozialwesen", "Qualitatives Matching", "Verlässliche Besetzung", "Partnerschaftliche Zusammenarbeit"],
+      "color": "turkis"
+    },
+    {
+      "id": "klinikum-nuernberg",
+      "name": "Klinikum Nürnberg",
+      "role": "Krankenhaus",
+      "bereich": "Einrichtung",
+      "since": "2020",
+      "location": "Nürnberg",
+      "quote": "Die Fachkräfte von Promedis24 integrieren sich schnell und arbeiten auf Augenhöhe mit unserem Stammpersonal.",
+      "story": "Das Klinikum Nürnberg setzt seit über 4 Jahren auf Promedis24 für flexible Personalergänzung in der Pflege. Besonders geschätzt wird die schnelle Reaktionszeit und die hohe fachliche Qualität der Fachkräfte. \"Wir haben schon viele Dienstleister ausprobiert. Bei Promedis24 stimmt das Gesamtpaket: Qualität, Kommunikation und Verlässlichkeit.\"",
+      "benefits": ["Schnelle Reaktionszeit", "Fachliche Qualität", "Zuverlässige Kommunikation", "Langfristige Partnerschaft"],
+      "color": "amethyst"
+    }
+  ],
+  "stats": {
+    "talents": "600+",
+    "years": "14+",
+    "rating": "4,6",
+    "ratingSource": "Indeed"
+  }
+}

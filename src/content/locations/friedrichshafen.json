@@ -1,17 +1,17 @@
 {
-  "city": "München",
-  "slug": "muenchen",
-  "address": "Barthstr. 22, 80339 München",
-  "phone": "089-41617330",
-  "email": "muenchen@promedis24.de",
+  "city": "Friedrichshafen",
+  "slug": "friedrichshafen",
+  "address": "Karlstr. 31, 88045 Friedrichshafen",
+  "phone": "07541-9536380",
+  "email": "friedrichshafen@promedis24.de",
   "areaManager": {
     "name": "N.N.",
     "title": "Area Manager – Region Süd",
     "image": "/images/team/placeholder.jpg"
   },
   "coordinates": {
-    "lat": 48.1327,
-    "lng": 11.5385
+    "lat": 47.6543,
+    "lng": 9.4801
   },
   "region": "Süden",
   "benefits": [
@@ -19,5 +19,5 @@
     "unbefristete-festanstellung",
     "wunsch-dienstplan"
   ],
-  "testimonials": ["awo-muenchen"]
+  "testimonials": []
 }

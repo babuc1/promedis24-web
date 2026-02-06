@@ -1,17 +1,17 @@
 {
-  "city": "Berlin",
-  "slug": "berlin",
-  "address": "Kurfürstendamm 194, 10707 Berlin",
-  "phone": "030-3117981-03",
-  "email": "berlin@promedis24.de",
+  "city": "Leipzig",
+  "slug": "leipzig",
+  "address": "Brühl 52, 04109 Leipzig",
+  "phone": "0341-35569380",
+  "email": "leipzig@promedis24.de",
   "areaManager": {
     "name": "Franciska Morawa",
     "title": "Area Managerin – Region Ost",
     "image": "/images/team/franciska-morawa.jpg"
   },
   "coordinates": {
-    "lat": 52.5006,
-    "lng": 13.3122
+    "lat": 51.3406,
+    "lng": 12.3747
   },
   "region": "Osten",
   "benefits": [
@@ -19,5 +19,5 @@
     "unbefristete-festanstellung",
     "wunsch-dienstplan"
   ],
-  "testimonials": ["patrick-intensivpfleger"]
+  "testimonials": []
 }

@@ -1,0 +1,23 @@
+{
+  "city": "Köln",
+  "slug": "koeln",
+  "address": "Konrad-Adenauer-Ufer 21, 50668 Köln",
+  "phone": "0221-29266300",
+  "email": "koeln@promedis24.de",
+  "areaManager": {
+    "name": "Guido Wollsiefer",
+    "title": "ppa. Area Manager – Region West",
+    "image": "/images/team/guido-wollsiefer.jpg"
+  },
+  "coordinates": {
+    "lat": 50.9438,
+    "lng": 6.9647
+  },
+  "region": "Westen",
+  "benefits": [
+    "uebertarifliche-bezahlung",
+    "unbefristete-festanstellung",
+    "wunsch-dienstplan"
+  ],
+  "testimonials": ["marina-sozialpaedagogin"]
+}
