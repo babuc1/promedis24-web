@@ -1,0 +1,47 @@
+[
+  {
+    "id": "test-1",
+    "name": "Sarah K.",
+    "role": "Gesundheits- und Krankenpflegerin",
+    "area": "pflege",
+    "quote": "Endlich ein Arbeitgeber, der meine Bedürfnisse ernst nimmt. Der Wunsch-Dienstplan hat mein Leben verändert!",
+    "image": "/images/testimonials/sarah.jpg",
+    "location": "Berlin"
+  },
+  {
+    "id": "test-2",
+    "name": "Michael R.",
+    "role": "Altenpfleger",
+    "area": "pflege",
+    "quote": "Das Gehalt ist top und ich fühle mich wertgeschätzt. Die persönliche Betreuung macht den Unterschied.",
+    "image": "/images/testimonials/michael.jpg",
+    "location": "Berlin"
+  },
+  {
+    "id": "test-3",
+    "name": "Lisa M.",
+    "role": "Erzieherin",
+    "area": "paedagogik",
+    "quote": "Flexibilität und Sicherheit – beides habe ich bei Promedis24 gefunden. Ich kann das nur empfehlen!",
+    "image": "/images/testimonials/lisa.jpg",
+    "location": "München"
+  },
+  {
+    "id": "test-4",
+    "name": "Jan P.",
+    "role": "Medizinisch-technischer Assistent",
+    "area": "medizin",
+    "quote": "Die übertarifliche Bezahlung und der Empfehlungsbonus sind unschlagbar. Zeitarbeit kann richtig gut sein!",
+    "image": "/images/testimonials/jan.jpg",
+    "location": "Hamburg"
+  },
+  {
+    "id": "test-5",
+    "name": "Sandra W.",
+    "role": "Kinderpflegerin",
+    "area": "paedagogik",
+    "quote": "Ich liebe die Abwechslung und die verschiedenen Einrichtungen, die ich kennenlerne. Das On-Tour-Programm ist genial!",
+    "image": "/images/testimonials/sandra.jpg",
+    "location": "Köln"
+  }
+]

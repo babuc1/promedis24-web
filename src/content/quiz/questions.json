@@ -1,0 +1,44 @@
+[
+  {
+    "id": "q1",
+    "myth": "Zeitarbeit bedeutet schlechte Bezahlung",
+    "answer": false,
+    "explanation": "Falsch! Bei Promedis24 verdienst du übertariflich. Dazu kommen Zulagen, Boni und der Empfehlungsbonus.",
+    "fact": "Durchschnittlich verdienen unsere Mitarbeiter 15-20% mehr als im klassischen Anstellungsverhältnis."
+  },
+  {
+    "id": "q2",
+    "myth": "In der Zeitarbeit hat man keinen sicheren Job",
+    "answer": false,
+    "explanation": "Stimmt nicht! Du bist bei uns unbefristet festangestellt – mit allen Vorteilen einer sicheren Beschäftigung.",
+    "fact": "100% unserer Mitarbeiter haben unbefristete Arbeitsverträge."
+  },
+  {
+    "id": "q3",
+    "myth": "Zeitarbeit bedeutet ständiger Stress und Hektik",
+    "answer": false,
+    "explanation": "Im Gegenteil! Mit deinem Wunsch-Dienstplan bestimmst du selbst, wann und wie viel du arbeitest.",
+    "fact": "92% unserer Mitarbeiter sind mit ihrer Work-Life-Balance zufrieden."
+  },
+  {
+    "id": "q4",
+    "myth": "Man lernt viele verschiedene Einrichtungen kennen",
+    "answer": true,
+    "explanation": "Richtig! Du sammelst wertvolle Erfahrungen in verschiedenen Häusern und erweiterst ständig deinen Horizont.",
+    "fact": "Unsere Mitarbeiter lernen durchschnittlich 4-6 verschiedene Einrichtungen pro Jahr kennen."
+  },
+  {
+    "id": "q5",
+    "myth": "Bei Zeitarbeit gibt es keine Weiterbildung",
+    "answer": false,
+    "explanation": "Falsch! Wir investieren in deine Entwicklung mit regelmäßigen Schulungen und Fortbildungen.",
+    "fact": "Promedis24 bietet jährlich über 50 verschiedene Weiterbildungsangebote."
+  },
+  {
+    "id": "q6",
+    "myth": "Zeitarbeit ist nur etwas für Berufseinsteiger",
+    "answer": false,
+    "explanation": "Überhaupt nicht! Zeitarbeit ist für alle geeignet – ob Berufseinsteiger oder erfahrene Fachkraft.",
+    "fact": "Das Durchschnittsalter unserer Mitarbeiter liegt bei 38 Jahren."
+  }
+]

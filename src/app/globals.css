@@ -1,26 +1,158 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* Promedis24 Design Tokens */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Primary Colors */
+  --color-turkis: #23D2AF;
+  --color-turkis-light: #E0F7F1;
+  --color-turkis-dark: #1BA88C;
+
+  --color-amethyst: #8A84F5;
+  --color-amethyst-light: #EEEDFE;
+  --color-amethyst-dark: #6B64D9;
+
+  --color-coal: #002D32;
+  --color-grey: #F5F5F5;
+  --color-white: #FFFFFF;
+
+  /* Semantic Colors */
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-coal);
+  --color-primary: var(--color-turkis);
+  --color-secondary: var(--color-amethyst);
+
+  /* Fonts - Artex family (placeholders until fonts are provided) */
+  --font-artex: "Artex", system-ui, -apple-system, sans-serif;
+  --font-artex-black: "Artex Black", "Artex", system-ui, sans-serif;
+  --font-artex-compressed: "Artex Compressed", "Artex", system-ui, sans-serif;
+  --font-artex-extended: "Artex Extended", "Artex", system-ui, sans-serif;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+
+  /* Spacing */
+  --spacing-section: 5rem;
+  --spacing-container: 1.5rem;
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --transition-fast: 150ms;
+  --transition-normal: 300ms;
+  --transition-slow: 500ms;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Font Face Declarations - Add actual font files when available */
+/* @font-face {
+  font-family: "Artex";
+  src: url("/fonts/Artex-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Artex Black";
+  src: url("/fonts/Artex-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Artex Compressed";
+  src: url("/fonts/Artex-Compressed.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Artex Extended";
+  src: url("/fonts/Artex-Extended.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} */
+
+/* Base Styles */
+:root {
+  --background: var(--color-background);
+  --foreground: var(--color-foreground);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-artex);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-artex-black);
+  line-height: 1.2;
+  color: var(--color-coal);
+}
+
+/* Focus Styles */
+:focus-visible {
+  outline: 2px solid var(--color-turkis);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-turkis-light);
+  color: var(--color-coal);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-grey);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-turkis);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-turkis-dark);
 }

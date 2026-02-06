@@ -1,0 +1,22 @@
+{
+  "city": "München",
+  "slug": "muenchen",
+  "address": "Maximilianstraße 45, 80539 München",
+  "phone": "089-98765432",
+  "email": "muenchen@promedis24.de",
+  "areaManager": {
+    "name": "Thomas Weber",
+    "title": "Area Manager München",
+    "image": "/images/team/thomas-weber.jpg"
+  },
+  "coordinates": {
+    "lat": 48.1351,
+    "lng": 11.582
+  },
+  "benefits": [
+    "uebertarifliche-bezahlung",
+    "unbefristete-festanstellung",
+    "geburtstagsfrei"
+  ],
+  "testimonials": ["test-3"]
+}

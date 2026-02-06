@@ -1,0 +1,22 @@
+{
+  "city": "Hamburg",
+  "slug": "hamburg",
+  "address": "Jungfernstieg 30, 20354 Hamburg",
+  "phone": "040-55667788",
+  "email": "hamburg@promedis24.de",
+  "areaManager": {
+    "name": "Anna Meyer",
+    "title": "Area Manager Hamburg",
+    "image": "/images/team/anna-meyer.jpg"
+  },
+  "coordinates": {
+    "lat": 53.5511,
+    "lng": 9.9937
+  },
+  "benefits": [
+    "uebertarifliche-bezahlung",
+    "persoenlicher-ansprechpartner",
+    "wunsch-dienstplan"
+  ],
+  "testimonials": ["test-4"]
+}

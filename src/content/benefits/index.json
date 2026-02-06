@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Übertarifliche Bezahlung",
+    "slug": "uebertarifliche-bezahlung",
+    "icon": "euro",
+    "shortDescription": "Du verdienst mehr als im Tarifvertrag vorgesehen. Dazu kommen attraktive Zulagen und Bonuszahlungen.",
+    "seoTitle": "Übertarifliche Bezahlung bei Promedis24",
+    "seoDescription": "Bei Promedis24 verdienst du übertariflich. Erfahre mehr über unser Gehaltsmodell mit Zulagen und Boni."
+  },
+  {
+    "title": "Unbefristete Festanstellung",
+    "slug": "unbefristete-festanstellung",
+    "icon": "shield-check",
+    "shortDescription": "Bei uns bist du unbefristet festangestellt – mit allen Vorteilen einer sicheren Beschäftigung.",
+    "seoTitle": "Unbefristete Festanstellung in der Zeitarbeit | Promedis24",
+    "seoDescription": "Zeitarbeit mit unbefristeter Festanstellung. Sichere dir deinen Job bei Promedis24."
+  },
+  {
+    "title": "Wunsch-Dienstplan",
+    "slug": "wunsch-dienstplan",
+    "icon": "calendar-check",
+    "shortDescription": "Du bestimmst, wann du arbeitest. Mit unserem Wunsch-Dienstplan hast du die volle Kontrolle.",
+    "seoTitle": "Wunsch-Dienstplan - Flexible Arbeitszeiten | Promedis24",
+    "seoDescription": "Flexible Arbeitszeiten mit dem Wunsch-Dienstplan von Promedis24. Du entscheidest über deine Work-Life-Balance."
+  },
+  {
+    "title": "Geburtstagsfrei",
+    "slug": "geburtstagsfrei",
+    "icon": "cake",
+    "shortDescription": "An deinem Geburtstag hast du frei – bezahlt natürlich. Feier deinen Tag!",
+    "seoTitle": "Geburtstagsfrei als Benefit | Promedis24",
+    "seoDescription": "Bei Promedis24 hast du an deinem Geburtstag frei. Entdecke unsere einzigartigen Benefits."
+  },
+  {
+    "title": "Empfehlungsbonus",
+    "slug": "empfehlungsbonus",
+    "icon": "gift",
+    "shortDescription": "Empfehle uns weiter und erhalte einen Bonus. Jede erfolgreiche Empfehlung wird belohnt.",
+    "seoTitle": "Empfehlungsbonus - Mitarbeiter werben Mitarbeiter | Promedis24",
+    "seoDescription": "Verdiene extra mit dem Empfehlungsbonus von Promedis24. Mitarbeiter werben Mitarbeiter Programm."
+  },
+  {
+    "title": "Persönlicher Ansprechpartner",
+    "slug": "persoenlicher-ansprechpartner",
+    "icon": "user-heart",
+    "shortDescription": "Du hast einen festen Ansprechpartner, der immer für dich da ist – persönlich und erreichbar.",
+    "seoTitle": "Persönlicher Ansprechpartner | Promedis24",
+    "seoDescription": "Bei Promedis24 hast du einen persönlichen Ansprechpartner. Erfahre mehr über unsere Betreuung."
+  }
+]

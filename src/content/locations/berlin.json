@@ -1,0 +1,22 @@
+{
+  "city": "Berlin",
+  "slug": "berlin",
+  "address": "Friedrichstraße 123, 10117 Berlin",
+  "phone": "030-12345678",
+  "email": "berlin@promedis24.de",
+  "areaManager": {
+    "name": "Maria Schmidt",
+    "title": "Area Manager Berlin",
+    "image": "/images/team/maria-schmidt.jpg"
+  },
+  "coordinates": {
+    "lat": 52.52,
+    "lng": 13.405
+  },
+  "benefits": [
+    "uebertarifliche-bezahlung",
+    "unbefristete-festanstellung",
+    "wunsch-dienstplan"
+  ],
+  "testimonials": ["test-1", "test-2"]
+}
