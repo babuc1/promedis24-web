@@ -48,10 +48,15 @@
 ### VERBOTEN (zu wenig Kontrast)
 
 - ❌ `text-coal` auf `coal` Hintergrund
+- ❌ `text-coal` auf `turkis` Hintergrund (beide sind grün!)
 - ❌ `text-turkis` auf `turkis` Hintergrund
 - ❌ `text-amethyst` auf `amethyst` Hintergrund
 - ❌ `text-white` auf `white` / `grey` Hintergrund
 - ❌ Helle Farben mit Opacity < 40% auf hellen Hintergründen
+
+### RICHTIG für Turkis-Hintergrund
+- ✅ `bg-turkis text-white` (Primary Button)
+- ✅ `bg-turkis-light text-coal` (Section Hintergrund - light ist ok)
 
 ---
 
@@ -60,10 +65,10 @@
 ### Primary Button (Bewerber)
 ```css
 Hintergrund: turkis
-Text: coal (NICHT white)
+Text: white (NICHT coal - beide sind grünlich!)
 Hover: turkis-dark
 ```
-**Tailwind:** `bg-turkis text-coal hover:bg-turkis-dark`
+**Tailwind:** `bg-turkis text-white hover:bg-turkis-dark`
 
 ### Secondary Button (Unternehmen)
 ```css
@@ -93,9 +98,9 @@ Hover: white/20
 ```css
 Border: turkis (2px)
 Text: turkis
-Hover: bg-turkis text-coal
+Hover: bg-turkis text-white
 ```
-**Tailwind:** `border-2 border-turkis text-turkis hover:bg-turkis hover:text-coal`
+**Tailwind:** `border-2 border-turkis text-turkis hover:bg-turkis hover:text-white`
 
 ---
 
@@ -308,8 +313,8 @@ className="px-4 sm:px-6 lg:px-8"
 ### Problem: Ghost Button auf dunklem Hintergrund nicht sichtbar
 **Lösung:** Verwende `bg-white/10 text-white` statt `text-coal`
 
-### Problem: Primary Button Text zu wenig Kontrast
-**Lösung:** `text-coal` statt `text-white` auf `bg-turkis`
+### Problem: Grün auf Grün (Coal ist auch grünlich!)
+**Lösung:** `text-white` auf `bg-turkis` (nicht coal, da coal=#002D32 auch grün ist)
 
 ### Problem: Akzentfarbe auf gleichfarbigem Hintergrund
 **Lösung:** Verwende `text-white` auf dunklen Akzenten, `text-coal` auf hellen
