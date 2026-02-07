@@ -280,7 +280,7 @@ export default function Home() {
               <Button href="/bewerben" variant="primary">
                 In 60 Sek. bewerben <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
-              <Button href="/benefits" variant="ghost">
+              <Button href="/benefits" variant="ghost-dark">
                 Alle Benefits ansehen
               </Button>
             </div>

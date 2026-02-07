@@ -108,7 +108,7 @@ export default function SplitHero() {
                   exit={{ opacity: 0, width: 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <Button href="/jobs" variant="ghost">
+                  <Button href="/jobs-in-meiner-naehe" variant="ghost-dark">
                     Jobs entdecken
                   </Button>
                 </motion.div>
@@ -249,7 +249,7 @@ export default function SplitHero() {
                   exit={{ opacity: 0, width: 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <Button href="/fuer-unternehmen/vorteile" variant="ghost">
+                  <Button href="/fuer-unternehmen/vorteile" variant="ghost-dark">
                     Vorteile ansehen
                   </Button>
                 </motion.div>

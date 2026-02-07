@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 type ButtonBaseProps = {
-  variant?: "primary" | "secondary" | "ghost" | "outline";
+  variant?: "primary" | "secondary" | "ghost" | "ghost-dark" | "outline";
   size?: "sm" | "md" | "lg";
   fullWidth?: boolean;
   isLoading?: boolean;
@@ -31,13 +31,19 @@ export type ButtonProps = ButtonAsButton | ButtonAsLink;
 const buttonStyles = {
   base: "inline-flex items-center justify-center font-medium rounded-lg transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed",
   variants: {
+    // Primary (Bewerber): Türkis BG + Coal Text für guten Kontrast
     primary:
-      "bg-turkis text-white hover:bg-turkis-dark focus-visible:ring-turkis shadow-md hover:shadow-lg",
+      "bg-turkis text-coal hover:bg-turkis-dark focus-visible:ring-turkis shadow-md hover:shadow-lg",
+    // Secondary (Unternehmen): Amethyst BG + White Text
     secondary:
       "bg-amethyst text-white hover:bg-amethyst-dark focus-visible:ring-amethyst shadow-md hover:shadow-lg",
+    // Ghost für helle Hintergründe
     ghost: "bg-transparent text-coal hover:bg-grey focus-visible:ring-turkis",
+    // Ghost für dunkle Hintergründe
+    "ghost-dark": "bg-white/10 text-white hover:bg-white/20 focus-visible:ring-white",
+    // Outline
     outline:
-      "bg-transparent border-2 border-turkis text-turkis hover:bg-turkis hover:text-white focus-visible:ring-turkis",
+      "bg-transparent border-2 border-turkis text-turkis hover:bg-turkis hover:text-coal focus-visible:ring-turkis",
   },
   sizes: {
     sm: "px-4 py-2 text-sm",

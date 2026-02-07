@@ -135,7 +135,7 @@ export default function OnTourPage() {
                 Jetzt On-Tour bewerben
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-              <Button href="#so-funktionierts" variant="ghost" size="lg">
+              <Button href="#so-funktionierts" variant="ghost-dark" size="lg">
                 So funktioniert&apos;s
                 <ChevronDown className="w-5 h-5 ml-2" />
               </Button>
@@ -376,7 +376,7 @@ export default function OnTourPage() {
                 In 60 Sek. bewerben
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-              <Button href="/standorte" variant="ghost" size="lg">
+              <Button href="/standorte" variant="ghost-dark" size="lg">
                 Standorte entdecken
               </Button>
             </div>

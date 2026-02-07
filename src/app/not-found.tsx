@@ -116,7 +116,7 @@ export default function NotFound() {
             transition={{ delay: 0.5 }}
             className="mt-12"
           >
-            <Button href="/" variant="ghost" size="lg">
+            <Button href="/" variant="ghost-dark" size="lg">
               <Home className="w-5 h-5 mr-2" />
               Zur Startseite
             </Button>
