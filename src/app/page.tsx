@@ -56,9 +56,9 @@ export default function Home() {
   };
 
   return (
-    <main className="bg-white text-coal">
+    <main className="bg-white">
       {/* ═══ 1. HERO ═══ */}
-      <section className="min-h-screen bg-coal flex flex-col justify-center items-center text-center px-6 py-20 relative overflow-hidden">
+      <section className="min-h-screen bg-coal text-white flex flex-col justify-center items-center text-center px-6 py-20 relative overflow-hidden">
         {/* Gradient orbs */}
         <div className="absolute top-[10%] left-[15%] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(35,210,175,0.06)_0%,transparent_70%)] pointer-events-none" />
         <div className="absolute bottom-[10%] right-[15%] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(138,132,245,0.06)_0%,transparent_70%)] pointer-events-none" />
@@ -88,8 +88,7 @@ export default function Home() {
             <div className="flex gap-4 justify-center flex-wrap">
               <button
                 onClick={() => scrollTo('bewerber-section')}
-                className="inline-flex items-center gap-2.5 bg-turkis px-7 py-4 rounded-xl text-base font-bold hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(35,210,175,0.25)] transition-all"
-                style={{ color: '#FFFFFF' }}
+                className="inline-flex items-center gap-2.5 bg-turkis text-white px-7 py-4 rounded-xl text-base font-bold hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(35,210,175,0.25)] transition-all"
               >
                 <Heart className="w-[18px] h-[18px]" />
                 Ich suche einen Job
@@ -233,7 +232,7 @@ export default function Home() {
       </section>
 
       {/* ═══ 4A. BEWERBER SECTION ═══ */}
-      <section id="bewerber-section" className="bg-coal py-24 px-6 relative overflow-hidden">
+      <section id="bewerber-section" className="bg-coal text-white py-24 px-6 relative overflow-hidden">
         <div className="absolute bottom-[-20%] left-[-10%] w-1/2 h-1/2 bg-[radial-gradient(circle,rgba(35,210,175,0.06)_0%,transparent_70%)] pointer-events-none" />
 
         <div className="max-w-[960px] mx-auto relative z-10">
@@ -397,7 +396,7 @@ export default function Home() {
       </section>
 
       {/* ═══ 6. FINAL CTA ═══ */}
-      <section className="bg-coal py-20 px-6">
+      <section className="bg-coal text-white py-20 px-6">
         <div className="max-w-[640px] mx-auto text-center">
           <FadeIn>
             <h2 className="font-black text-4xl text-white leading-tight mb-4">
