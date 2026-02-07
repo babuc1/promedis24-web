@@ -33,7 +33,7 @@ const buttonStyles = {
   variants: {
     // Primary (Bewerber): Türkis BG + White Text (nicht coal - beide sind grünlich)
     primary:
-      "bg-turkis text-[#FFFFFF] hover:bg-turkis-dark focus-visible:ring-turkis shadow-md hover:shadow-lg",
+      "bg-turkis !text-white hover:bg-turkis-dark focus-visible:ring-turkis shadow-md hover:shadow-lg",
     // Secondary (Unternehmen): Amethyst BG + White Text
     secondary:
       "bg-amethyst text-white hover:bg-amethyst-dark focus-visible:ring-amethyst shadow-md hover:shadow-lg",
