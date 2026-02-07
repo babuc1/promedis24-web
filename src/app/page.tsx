@@ -268,8 +268,8 @@ export default function Home() {
               <FadeIn key={f.title} delay={0.15 + i * 0.08}>
                 <div className="bg-white/[0.04] border border-white/[0.06] rounded-2xl p-7 hover:border-turkis/15 hover:bg-turkis/[0.04] transition-all">
                   <f.icon className="w-[22px] h-[22px] text-turkis opacity-80 mb-4" />
-                  <h3 className="font-extrabold text-[17px] text-white mb-2">{f.title}</h3>
-                  <p className="text-white/40 text-sm leading-relaxed">{f.desc}</p>
+                  <h3 className="font-extrabold text-[17px] !text-white mb-2">{f.title}</h3>
+                  <p className="!text-white/40 text-sm leading-relaxed">{f.desc}</p>
                 </div>
               </FadeIn>
             ))}
