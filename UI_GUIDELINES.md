@@ -349,9 +349,24 @@ className="px-4 sm:px-6 lg:px-8"
 | Pfad | Beschreibung | Status |
 |------|--------------|--------|
 | `/fuer-unternehmen/zeitarbeit` | Was ist Zeitarbeit? | ✅ Fertig |
-| `/fuer-unternehmen/prozess` | Unser Prozess | ✅ Fertig |
-| `/fuer-unternehmen/vorteile` | Ihre Vorteile | ✅ Fertig |
-| `/personalvermittlung` | Personalvermittlung | ✅ Fertig |
+| `/fuer-unternehmen/prozess` | Unser Prozess (6 Schritte) | ✅ Fertig |
+| `/fuer-unternehmen/vorteile` | Ihre Vorteile (mit Vergleichstabelle) | ✅ Fertig |
+| `/personalvermittlung` | Personalvermittlung / Direktvermittlung | ✅ Fertig |
+
+### Kritische Fixes (Februar 2026)
+
+**Problem:** Text erschien dunkelgrün statt weiß auf Buttons und dunklen Sektionen.
+
+**Ursache:** In `globals.css` war `color: var(--color-coal)` für h1-h6 gesetzt, was alle Tailwind-Klassen überschrieb.
+
+**Lösung:** `color`-Deklaration aus den Base-Styles entfernt:
+```css
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-artex-black);
+  line-height: 1.2;
+  /* color removed - let Tailwind classes handle text color */
+}
+```
 
 ### Navigation-Links korrigiert
 

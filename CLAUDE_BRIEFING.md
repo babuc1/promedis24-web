@@ -1,26 +1,124 @@
 # Promedis24 Website - Claude AI Briefing Document
 
-**Last Updated:** 2026-02-06
+**Last Updated:** 2026-02-07
 
 ## Project Overview
 
 This is a website relaunch for **Promedis24**, a German healthcare staffing company specializing in temporary work (Zeitarbeit) for nursing, education, and medical professionals.
 
 **Project Location:** `/Users/babu/promedis24-web`
+**Live URL:** https://promedis24-web.vercel.app
+**Repository:** https://github.com/babuc1/promedis24-web
 
 ---
 
 ## Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| Next.js 16+ (App Router) | Core framework with SSG/SSR |
-| TypeScript | Type safety |
-| Tailwind CSS v4 | Styling with CSS-based config |
-| Framer Motion | Animations |
-| Supabase | Backend (to be connected) |
-| Lucide React | Icons |
-| Vercel | Deployment target |
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| Next.js | 16.1.6 | Core framework with App Router |
+| React | 19 | UI Library |
+| TypeScript | 5.x | Type safety |
+| Tailwind CSS | 4.x | Styling with **CSS-based config** |
+| Framer Motion | 11.x | Animations |
+| Lucide React | Latest | Icons |
+| Vercel | - | Deployment |
+
+---
+
+## CRITICAL: Lessons Learned
+
+### 1. Tailwind v4 Uses CSS-based Config (NOT tailwind.config.js)
+
+Design tokens are defined in `src/app/globals.css` using `@theme` blocks:
+
+```css
+@import "tailwindcss";
+
+@theme inline {
+  --color-turkis: #23D2AF;
+  --color-amethyst: #8A84F5;
+  --color-coal: #002D32;
+  /* etc. */
+}
+```
+
+### 2. CSS Specificity Can Override Tailwind Classes
+
+**Problem we fixed:** Text was appearing as dark green instead of white on buttons, even with `text-white` class applied.
+
+**Root Cause:** Base styles in `globals.css` were overriding Tailwind utility classes:
+
+```css
+/* THIS WAS THE PROBLEM - color declaration overrode Tailwind! */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-coal);  /* ← REMOVED */
+}
+```
+
+**Solution:** Never set `color` in base CSS styles. Let Tailwind utility classes control colors:
+
+```css
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-artex-black);
+  line-height: 1.2;
+  /* color removed - let Tailwind classes handle text color */
+}
+```
+
+### 3. Coal (#002D32) is NOT Black - It's Dark Green/Teal!
+
+This is critical for contrast:
+
+| Background | Text Color | Result |
+|------------|-----------|--------|
+| `bg-turkis` | `text-coal` | BAD - Green on green |
+| `bg-turkis` | `text-white` | GOOD |
+| `bg-coal` | `text-coal` | BAD - No contrast |
+| `bg-coal` | `text-white` | GOOD |
+
+### 4. Use !important When Needed
+
+Tailwind v4 syntax for !important:
+```tsx
+className="!text-white"  // Generates: color: #fff !important;
+```
+
+---
+
+## Design System
+
+### Brand Colors
+
+| Color | Hex | Variable | Usage |
+|-------|-----|----------|-------|
+| Turkis | `#23D2AF` | `--color-turkis` | Primary (Bewerber) |
+| Turkis Light | `#E0F7F1` | `--color-turkis-light` | Light backgrounds |
+| Turkis Dark | `#1BA88C` | `--color-turkis-dark` | Hover states |
+| Amethyst | `#8A84F5` | `--color-amethyst` | Secondary (Unternehmen) |
+| Amethyst Light | `#EEEDFE` | `--color-amethyst-light` | Light backgrounds |
+| Amethyst Dark | `#6B64D9` | `--color-amethyst-dark` | Hover states |
+| Coal | `#002D32` | `--color-coal` | Text on light, dark sections |
+| Grey | `#F5F5F5` | `--color-grey` | Neutral backgrounds |
+| White | `#FFFFFF` | `--color-white` | Light bg, text on dark |
+
+### Button Variants (src/components/ui/Button.tsx)
+
+```tsx
+variants: {
+  primary: "bg-turkis !text-white hover:bg-turkis-dark",      // Bewerber
+  secondary: "bg-amethyst text-white hover:bg-amethyst-dark", // Unternehmen
+  ghost: "bg-transparent text-coal hover:bg-grey",            // Light backgrounds
+  "ghost-dark": "bg-white/10 text-white hover:bg-white/20",   // Dark backgrounds
+  outline: "border-2 border-turkis text-turkis hover:bg-turkis hover:text-white",
+}
+```
+
+### Typography
+
+- **Artex** font family (using system fonts until Artex files provided)
+- Font files needed: Artex Black, Artex Compressed, Artex Extended, Artex Regular
+- Place in `/public/fonts/` and uncomment `@font-face` rules in `globals.css`
 
 ---
 
@@ -30,31 +128,31 @@ This is a website relaunch for **Promedis24**, a German healthcare staffing comp
 promedis24-web/
 ├── src/
 │   ├── app/                    # Next.js App Router pages
+│   │   ├── globals.css        # Tailwind v4 theme config (CRITICAL!)
 │   │   ├── page.tsx           # Homepage
 │   │   ├── layout.tsx         # Root layout with Header/Footer
-│   │   ├── bewerben/          # Application form
+│   │   ├── bewerben/          # Application form (5 steps)
 │   │   ├── benefits/          # Benefits pages (overview + 6 detail)
 │   │   ├── standorte/         # Location pages (overview + 9 cities)
 │   │   ├── fuer-unternehmen/  # Enterprise pages
+│   │   │   ├── page.tsx       # Overview
+│   │   │   ├── zeitarbeit/    # What is Zeitarbeit
+│   │   │   ├── prozess/       # 6-step process
+│   │   │   └── vorteile/      # Benefits for employers
+│   │   ├── personalvermittlung/ # Direct placement
 │   │   ├── zeitarbeit-quiz/   # Interactive quiz
 │   │   ├── kontakt/           # Contact form
 │   │   ├── ueber-uns/         # About page
-│   │   ├── on-tour/           # On-Tour program page
+│   │   ├── on-tour/           # On-Tour program
 │   │   ├── erfolgsgeschichten/ # Success stories
-│   │   ├── jobs-in-meiner-naehe/ # Location-based job search
+│   │   ├── jobs-in-meiner-naehe/ # Geolocation job search
 │   │   ├── impressum/         # Legal
 │   │   └── datenschutz/       # Privacy
 │   ├── components/
-│   │   ├── ui/                # Design system (Button, Card, Section, Grid, TapeStrip)
+│   │   ├── ui/                # Design system (Button, Card, Section, Grid)
 │   │   ├── layout/            # Header, Footer, Navigation
 │   │   └── sections/          # Page sections (Hero, Stats, etc.)
 │   ├── content/               # JSON content (CMS-ready)
-│   │   ├── locations/         # Location data (9 cities + index)
-│   │   ├── benefits/          # Benefits data
-│   │   ├── testimonials/      # Testimonial data
-│   │   ├── stories/           # Success stories (6 stories)
-│   │   ├── on-tour/           # On-Tour program content
-│   │   └── quiz/              # Quiz questions
 │   └── lib/
 │       ├── utils.ts           # Utility functions (cn, slugify)
 │       └── types.ts           # TypeScript types
@@ -63,41 +161,12 @@ promedis24-web/
 
 ---
 
-## Design System
-
-### Brand Colors (defined in `src/app/globals.css`)
-
-| Color | Hex | Usage |
-|-------|-----|-------|
-| Turkis | `#23D2AF` | Primary (Bewerber/Applicants) |
-| Turkis Light | `#E0F7F1` | Backgrounds |
-| Amethyst | `#8A84F5` | Secondary (Unternehmen/Enterprise) |
-| Amethyst Light | `#EEEDFE` | Backgrounds |
-| Coal | `#002D32` | Text (NOT black!) |
-| Grey | `#F5F5F5` | Neutral backgrounds |
-
-### Typography
-
-- **Artex** font family (not yet installed - placeholder using system fonts)
-- Font files needed: Artex Black, Artex Compressed, Artex Extended, Artex Regular
-- Place in `/public/fonts/` and uncomment `@font-face` rules in `globals.css`
-
-### Core UI Components (`src/components/ui/`)
-
-- `Button` - Primary/Secondary/Ghost/Outline variants, supports `href` for links
-- `Card` - Default/Turkis/Amethyst/Tape variants
-- `Section` - Full-width sections with background variants
-- `Grid` - Responsive grid (1-6 columns)
-- `TapeStrip` - Decorative tape element (brand identity)
-
----
-
 ## Dual Audience System
 
 The website serves TWO audiences with distinct color coding:
 
 1. **Bewerber (Job Seekers)** - Turkis color scheme
-   - Routes: `/bewerben`, `/jobs`, `/benefits`, `/zeitarbeit-quiz`, `/on-tour`, `/jobs-in-meiner-naehe`, `/erfolgsgeschichten`
+   - Routes: `/bewerben`, `/benefits`, `/zeitarbeit-quiz`, `/on-tour`, `/jobs-in-meiner-naehe`, `/erfolgsgeschichten`
 
 2. **Unternehmen (Employers)** - Amethyst color scheme
    - Routes: `/fuer-unternehmen/*`, `/personalvermittlung`, `/kontakt`
@@ -108,97 +177,90 @@ The navigation has a toggle to switch between modes.
 
 ## Current Build Status
 
-**31 static pages generated successfully**
+**35 static pages generated successfully**
 
-```
-Route (app)
-├ ○ /
-├ ○ /benefits
-├ ● /benefits/[slug] (6 pages)
-├ ○ /bewerben
-├ ○ /datenschutz
-├ ○ /erfolgsgeschichten
-├ ○ /fuer-unternehmen
-├ ○ /impressum
-├ ○ /jobs-in-meiner-naehe
-├ ○ /kontakt
-├ ○ /on-tour
-├ ○ /standorte
-├ ● /standorte/[city] (9 cities)
-├ ○ /ueber-uns
-└ ○ /zeitarbeit-quiz
-```
+### Completed Pages
 
----
+#### Bewerber Section
+- [x] `/` - Homepage with route selection
+- [x] `/bewerben` - 5-step application form
+- [x] `/benefits` - Benefits overview
+- [x] `/benefits/[slug]` - 6 benefit detail pages
+- [x] `/jobs-in-meiner-naehe` - Geolocation job search
+- [x] `/on-tour` - On-Tour program
+- [x] `/zeitarbeit-quiz` - Interactive quiz
+- [x] `/erfolgsgeschichten` - Success stories
 
-## What's Completed
+#### Unternehmen Section
+- [x] `/fuer-unternehmen` - Enterprise overview
+- [x] `/fuer-unternehmen/zeitarbeit` - What is Zeitarbeit
+- [x] `/fuer-unternehmen/prozess` - 6-step process
+- [x] `/fuer-unternehmen/vorteile` - Benefits for employers
+- [x] `/personalvermittlung` - Direct placement
+- [x] `/kontakt` - Contact form
 
-### Pages
-- [x] Homepage with all sections
-- [x] Benefits pages (overview + 6 detail pages)
-- [x] Standorte pages (overview + 9 cities: Berlin, Hamburg, München, Nürnberg, Köln, Düsseldorf, Frankfurt, Leipzig, Friedrichshafen)
-- [x] Zeitarbeit Quiz (interactive)
-- [x] Bewerben page (multi-step application form)
-- [x] Fuer-Unternehmen landing page
-- [x] Kontakt page (dual form)
-- [x] Ueber-uns page
-- [x] Legal pages (Impressum, Datenschutz)
-- [x] **On-Tour page** - Program with FAQ accordion, destinations map, testimonials
-- [x] **Erfolgsgeschichten** - Success stories with filter and modal view
-- [x] **Jobs-in-meiner-Naehe** - Geolocation-based search with radius filtering
-
-### Infrastructure
-- [x] Project setup (Next.js, Tailwind, Framer Motion)
-- [x] Design tokens and global styles
-- [x] Core UI components
-- [x] Layout (Header, Footer, Navigation with dual-mode)
-- [x] Content JSON structure
+#### Shared
+- [x] `/standorte` - Locations overview
+- [x] `/standorte/[city]` - 9 city detail pages
+- [x] `/ueber-uns` - About us
+- [x] `/impressum` - Legal imprint
+- [x] `/datenschutz` - Privacy policy
+- [x] `/_not-found` - Custom 404
 
 ---
 
 ## What's NOT Completed (Remaining Tasks)
 
-### Phase 1: Missing Pages
-- [ ] `/jobs` - Job listings (needs ATS integration)
-- [ ] `/fuer-unternehmen/zeitarbeit` - What is Zeitarbeit page
-- [ ] `/fuer-unternehmen/prozess` - Process page with step animation
-- [ ] `/fuer-unternehmen/vorteile` - Benefits for employers
-- [ ] `/personalvermittlung` - Direct placement service
-
-### Phase 2: Integrations
+### Integrations
 - [ ] **Google Maps API** - Replace map placeholders in Standorte pages
 - [ ] **Supabase Backend** - Connect forms (contact, application)
 - [ ] **ATS Integration** - Connect to jobs.promedis24.de for job listings
 - [ ] **Analytics** - Vercel Analytics or GA4
 
-### Phase 3: Assets & Polish
+### Assets & Polish
 - [ ] **Artex Fonts** - Install when provided
 - [ ] **Images** - Add real photos/images
 - [ ] **Videos** - Hero video, testimonial videos
 - [ ] **OG Images** - Social sharing images
 - [ ] **Performance** - Lighthouse optimization
 
-### Phase 4: Deployment
-- [ ] Set up GitHub repository
-- [ ] Vercel deployment
-- [ ] Domain setup (promedis24.de)
-- [ ] SSL/DNS configuration
-
 ---
 
-## Content Files
+## Key Patterns
 
-All content is in `src/content/` as JSON files:
+### Section with Dark Background
+```tsx
+<section className="bg-coal text-white py-24 px-6">
+  <h2 className="text-white">Headline</h2>  {/* Explicit text-white! */}
+</section>
+```
 
-| File | Purpose |
-|------|---------|
-| `locations/index.json` | All 9 locations with coordinates |
-| `locations/*.json` | Individual city data (9 files) |
-| `benefits/index.json` | Benefits list |
-| `testimonials/index.json` | Testimonial quotes |
-| `stories/index.json` | 6 success stories (talents & employers) |
-| `on-tour/index.json` | On-Tour benefits, destinations, FAQ |
-| `quiz/questions.json` | Quiz questions |
+### Button Usage
+```tsx
+<Button href="/bewerben">Click me</Button>  // Link button
+<Button onClick={handleClick}>Submit</Button>  // Action button
+<Button variant="secondary">Enterprise</Button>  // Amethyst style
+<Button variant="ghost-dark">On dark bg</Button>  // For coal sections
+```
+
+### Framer Motion Animation
+```tsx
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.7, ease: [0.4, 0, 0.15, 1] }}
+>
+```
+
+### Badge/Tag Pattern
+```tsx
+// Bewerber (turkis)
+<span className="bg-turkis/10 text-turkis border border-turkis/20 rounded-lg px-3 py-1.5 text-sm">
+
+// Unternehmen (amethyst)
+<span className="bg-amethyst/10 text-amethyst border border-amethyst/20 rounded-lg px-3 py-1.5 text-sm">
+```
 
 ---
 
@@ -221,31 +283,22 @@ npm start
 
 | File | Purpose |
 |------|---------|
-| `src/app/globals.css` | Design tokens, fonts, global styles |
-| `src/components/ui/Button.tsx` | Button component (supports href for links) |
+| `src/app/globals.css` | Tailwind v4 theme config - CRITICAL for colors! |
+| `src/components/ui/Button.tsx` | Button with variants (primary uses !text-white) |
 | `src/components/layout/Navigation.tsx` | Main nav with dual-mode toggle |
-| `src/lib/types.ts` | TypeScript interfaces |
+| `UI_GUIDELINES.md` | Comprehensive UI documentation |
 
 ---
 
-## Notes for Continuation
+## Known Issues & Solutions
 
-1. **Button Component** - Use `href` prop for links, not `asChild`
-   ```tsx
-   <Button href="/bewerben">Click me</Button>
-   ```
-
-2. **Section Variants** - Use `variant` prop: default, coal, turkis, amethyst, grey
-
-3. **Responsive Grid** - Use `cols` prop (1, 2, 3, 4, 6)
-
-4. **Animations** - Framer Motion is set up. Use `motion.div` with `initial`, `animate`, `whileInView`
-
-5. **Content** - All text content should come from JSON files in `/src/content/`
-
-6. **Geolocation** - Jobs-in-meiner-Naehe uses Haversine formula for distance calculation
-
-7. **Stories Filter** - Erfolgsgeschichten supports filtering by: alle, Pflege, Pädagogik, Einrichtung
+| Issue | Solution |
+|-------|----------|
+| Text not white on dark bg | Check `globals.css` for overriding base styles |
+| Ghost button invisible on dark | Use `ghost-dark` variant |
+| Green on green contrast | Coal is green! Use `text-white` on turkis |
+| Tailwind classes not applying | CSS specificity - use `!` prefix or fix base styles |
+| Headings ignoring text-white | Remove `color:` from h1-h6 in globals.css |
 
 ---
 
@@ -267,19 +320,10 @@ npm start
 
 ---
 
-## Original Project Plan
+## Related Documentation
 
-The complete project plan is available at:
-`/Users/babu/Downloads/Promedis24_Website-Projektplan.docx`
-
-Key sections:
-- Executive Summary
-- Technical Architecture
-- Sitemap & Page Structure
-- Interactive Features
-- Design System
-- Phase Plan (6 phases)
-- SEO Strategy
+- `UI_GUIDELINES.md` - Comprehensive UI/design documentation
+- `README.md` - Project setup instructions
 
 ---
 
