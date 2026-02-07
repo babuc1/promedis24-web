@@ -88,7 +88,8 @@ export default function Home() {
             <div className="flex gap-4 justify-center flex-wrap">
               <button
                 onClick={() => scrollTo('bewerber-section')}
-                className="inline-flex items-center gap-2.5 bg-turkis text-[#FFFFFF] px-7 py-4 rounded-xl text-base font-bold hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(35,210,175,0.25)] transition-all"
+                className="inline-flex items-center gap-2.5 bg-turkis px-7 py-4 rounded-xl text-base font-bold hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(35,210,175,0.25)] transition-all"
+                style={{ color: '#FFFFFF' }}
               >
                 <Heart className="w-[18px] h-[18px]" />
                 Ich suche einen Job
