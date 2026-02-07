@@ -344,14 +344,14 @@ className="px-4 sm:px-6 lg:px-8"
 | `/datenschutz` | Datenschutz (rechtlich) | Beide |
 | `/_not-found` | Custom 404 Seite | Beide |
 
-### Fehlende Seiten ❌
+### Weitere Seiten (Unternehmen) ✅
 
-| Pfad | Beschreibung | Priorität |
-|------|--------------|-----------|
-| `/fuer-unternehmen/zeitarbeit` | Was ist Zeitarbeit? | Hoch |
-| `/fuer-unternehmen/prozess` | Unser Prozess | Hoch |
-| `/fuer-unternehmen/vorteile` | Ihre Vorteile | Mittel |
-| `/personalvermittlung` | Personalvermittlung | Mittel |
+| Pfad | Beschreibung | Status |
+|------|--------------|--------|
+| `/fuer-unternehmen/zeitarbeit` | Was ist Zeitarbeit? | ✅ Fertig |
+| `/fuer-unternehmen/prozess` | Unser Prozess | ✅ Fertig |
+| `/fuer-unternehmen/vorteile` | Ihre Vorteile | ✅ Fertig |
+| `/personalvermittlung` | Personalvermittlung | ✅ Fertig |
 
 ### Navigation-Links korrigiert
 
