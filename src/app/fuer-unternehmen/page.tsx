@@ -57,13 +57,13 @@ export default function FuerUnternehmenPage() {
       <Section variant="amethyst" padding="lg">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-block px-4 py-2 bg-white/20 text-coal rounded-full text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 bg-white/20 text-white rounded-full text-sm font-medium mb-6">
               Für Unternehmen
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-coal mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Qualifiziertes Personal für Ihre Einrichtung
             </h1>
-            <p className="text-lg text-coal/80 mb-8">
+            <p className="text-lg text-white/80 mb-8">
               Sie suchen Fachkräfte in Pflege, Pädagogik oder Medizin? Promedis24
               findet die passenden Talente für Sie – schnell, zuverlässig und
               mit persönlicher Betreuung.
@@ -72,7 +72,7 @@ export default function FuerUnternehmenPage() {
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button
                 href="/kontakt"
-                className="bg-amethyst text-white hover:bg-amethyst-dark"
+                className="bg-white text-amethyst hover:bg-white/90"
               >
                 Personal anfragen
                 <ArrowRight size={20} className="ml-2" />
@@ -80,7 +80,7 @@ export default function FuerUnternehmenPage() {
               <Button
                 variant="outline"
                 href="/fuer-unternehmen/prozess"
-                className="border-coal text-coal hover:bg-coal hover:text-white"
+                className="border-white text-white hover:bg-white hover:text-amethyst"
               >
                 Unser Prozess
               </Button>
@@ -90,18 +90,18 @@ export default function FuerUnternehmenPage() {
             <div className="grid grid-cols-4 gap-4">
               {stats.map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <p className="text-2xl font-bold text-coal">{stat.value}</p>
-                  <p className="text-xs text-coal/60">{stat.label}</p>
+                  <p className="text-2xl font-bold text-white">{stat.value}</p>
+                  <p className="text-xs text-white/60">{stat.label}</p>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="relative">
-            <div className="aspect-square bg-white/30 rounded-2xl flex items-center justify-center">
+            <div className="aspect-square bg-white/20 rounded-2xl flex items-center justify-center">
               <div className="text-center p-8">
-                <Users size={64} className="mx-auto text-amethyst mb-4" />
-                <p className="text-lg font-medium text-coal">
+                <Users size={64} className="mx-auto text-white mb-4" />
+                <p className="text-lg font-medium text-white">
                   Vertrauen Sie auf über 14 Jahre Erfahrung
                 </p>
               </div>

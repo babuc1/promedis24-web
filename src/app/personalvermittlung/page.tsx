@@ -108,7 +108,7 @@ const differences = [
     ],
     cta: "Jetzt anfragen",
     href: "/kontakt",
-    color: "turkis",
+    color: "amethyst",
   },
 ];
 
@@ -139,16 +139,16 @@ export default function PersonalvermittlungPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section variant="turkis" padding="lg">
+      <Section variant="amethyst" padding="lg">
         <div className="max-w-4xl">
-          <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 text-coal rounded-full text-sm font-medium mb-6">
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 text-white rounded-full text-sm font-medium mb-6">
             <UserPlus size={16} />
             Personalvermittlung
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-coal mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Fachkräfte direkt in Festanstellung
           </h1>
-          <p className="text-lg text-coal/80 mb-8 max-w-2xl">
+          <p className="text-lg text-white/80 mb-8 max-w-2xl">
             Sie suchen langfristige Verstärkung für Ihr Team? Wir finden die
             passende Fachkraft und vermitteln sie direkt in Ihre Festanstellung
             – mit Erfolgsgarantie.
@@ -161,7 +161,7 @@ export default function PersonalvermittlungPage() {
             <Button
               variant="outline"
               href="#unterschied"
-              className="border-coal text-coal hover:bg-coal hover:text-white"
+              className="border-white text-white hover:bg-white hover:text-amethyst"
             >
               Zeitarbeit vs. Vermittlung
             </Button>
@@ -185,10 +185,10 @@ export default function PersonalvermittlungPage() {
           {processSteps.map((item, index) => (
             <div key={item.step} className="relative">
               {index < processSteps.length - 1 && (
-                <div className="hidden md:block absolute top-8 left-[60%] right-[-40%] h-0.5 bg-turkis/20" />
+                <div className="hidden md:block absolute top-8 left-[60%] right-[-40%] h-0.5 bg-amethyst/20" />
               )}
               <Card className="text-center relative z-10 h-full">
-                <div className="w-12 h-12 bg-turkis text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
+                <div className="w-12 h-12 bg-amethyst text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">
                   {item.step}
                 </div>
                 <h3 className="text-lg font-bold text-coal mb-2">
@@ -210,8 +210,8 @@ export default function PersonalvermittlungPage() {
         <Grid cols={2} gap="lg">
           {benefits.map((benefit) => (
             <Card key={benefit.title} className="flex gap-4">
-              <div className="w-14 h-14 bg-turkis-light rounded-xl flex items-center justify-center flex-shrink-0">
-                <benefit.icon size={28} className="text-turkis" />
+              <div className="w-14 h-14 bg-amethyst-light rounded-xl flex items-center justify-center flex-shrink-0">
+                <benefit.icon size={28} className="text-amethyst" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-coal mb-2">
@@ -309,26 +309,26 @@ export default function PersonalvermittlungPage() {
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <Zap size={32} className="mx-auto text-turkis mb-3" />
+              <Zap size={32} className="mx-auto text-amethyst mb-3" />
               <p className="text-3xl font-black text-coal">85%</p>
               <p className="text-sm text-coal/60">
                 Erfolgreiche Vermittlungen
               </p>
             </div>
             <div>
-              <Clock size={32} className="mx-auto text-turkis mb-3" />
+              <Clock size={32} className="mx-auto text-amethyst mb-3" />
               <p className="text-3xl font-black text-coal">4 Wochen</p>
               <p className="text-sm text-coal/60">
                 Durchschnittliche Vermittlungsdauer
               </p>
             </div>
             <div>
-              <Users size={32} className="mx-auto text-turkis mb-3" />
+              <Users size={32} className="mx-auto text-amethyst mb-3" />
               <p className="text-3xl font-black text-coal">600+</p>
               <p className="text-sm text-coal/60">Fachkräfte im Netzwerk</p>
             </div>
             <div>
-              <Shield size={32} className="mx-auto text-turkis mb-3" />
+              <Shield size={32} className="mx-auto text-amethyst mb-3" />
               <p className="text-3xl font-black text-coal">100%</p>
               <p className="text-sm text-coal/60">Erfolgsgarantie</p>
             </div>
@@ -337,12 +337,12 @@ export default function PersonalvermittlungPage() {
       </Section>
 
       {/* CTA */}
-      <Section variant="turkis" padding="lg">
+      <Section variant="amethyst" padding="lg">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold text-coal mb-4">
+          <h2 className="text-3xl font-bold text-white mb-4">
             Finden Sie Ihre nächste Fachkraft
           </h2>
-          <p className="text-coal/70 mb-8">
+          <p className="text-white/70 mb-8">
             Teilen Sie uns Ihren Bedarf mit und wir starten die Suche nach dem
             perfekten Kandidaten.
           </p>
@@ -354,7 +354,7 @@ export default function PersonalvermittlungPage() {
             <Button
               variant="outline"
               href="/fuer-unternehmen"
-              className="border-coal text-coal hover:bg-coal hover:text-white"
+              className="border-white text-white hover:bg-white hover:text-amethyst"
             >
               Alle Leistungen
             </Button>

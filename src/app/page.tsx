@@ -365,7 +365,89 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══ 3. BEWERBER: JOB PROFILE SLIDER ═══ */}
+      {/* ═══ 3. FÜR WEN BIST DU HIER? ═══ */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-[960px] mx-auto">
+          <FadeIn>
+            <p className="text-center text-coal/35 text-xs font-bold tracking-[0.15em] uppercase mb-3">
+              Wie können wir helfen?
+            </p>
+          </FadeIn>
+          <FadeIn delay={0.05}>
+            <h2 className="text-center font-black text-4xl leading-tight mb-12 text-coal">
+              Für wen bist du hier?
+            </h2>
+          </FadeIn>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Bewerber Card */}
+            <motion.div
+              onClick={() => scrollTo('bewerber')}
+              whileHover={{ y: -4 }}
+              className="relative p-10 rounded-[20px] border border-turkis/10 bg-turkis/[0.02] cursor-pointer transition-all duration-500 overflow-hidden group hover:border-turkis/30 hover:bg-turkis/[0.05]"
+            >
+              <div className="absolute top-0 left-0 right-0 h-[3px] bg-turkis" />
+
+              <div className="w-12 h-12 rounded-[14px] flex items-center justify-center mb-6 bg-turkis/10 group-hover:bg-turkis transition-all duration-400">
+                <Heart className="w-[22px] h-[22px] text-turkis group-hover:text-white transition-colors duration-400" />
+              </div>
+
+              <h3 className="font-extrabold text-[22px] mb-2.5 text-coal">
+                Ich bin <span className="text-turkis">Fachkraft</span>
+              </h3>
+              <p className="text-coal/55 text-[15px] leading-relaxed mb-6">
+                Pflege, Pädagogik oder Medizin – finde den Job, der sich deinem Leben anpasst. Übertariflich, unbefristet, mit Wunsch-Dienstplan.
+              </p>
+
+              <div className="flex flex-wrap gap-1.5 mb-6">
+                {['Jobs finden', 'Benefits', 'Standorte', 'On-Tour'].map(t => (
+                  <span key={t} className="text-xs text-turkis bg-turkis/10 border border-turkis/15 rounded-md px-2.5 py-1 font-semibold">
+                    {t}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex items-center gap-1.5 text-turkis font-bold text-sm group-hover:translate-x-1 transition-transform duration-400">
+                Jetzt entdecken <ArrowRight className="w-4 h-4" />
+              </div>
+            </motion.div>
+
+            {/* Unternehmen Card */}
+            <motion.div
+              onClick={() => scrollTo('unternehmen')}
+              whileHover={{ y: -4 }}
+              className="relative p-10 rounded-[20px] border border-amethyst/10 bg-amethyst/[0.02] cursor-pointer transition-all duration-500 overflow-hidden group hover:border-amethyst/30 hover:bg-amethyst/[0.05]"
+            >
+              <div className="absolute top-0 left-0 right-0 h-[3px] bg-amethyst" />
+
+              <div className="w-12 h-12 rounded-[14px] flex items-center justify-center mb-6 bg-amethyst/10 group-hover:bg-amethyst transition-all duration-400">
+                <Building2 className="w-[22px] h-[22px] text-amethyst group-hover:text-white transition-colors duration-400" />
+              </div>
+
+              <h3 className="font-extrabold text-[22px] mb-2.5 text-coal">
+                Ich bin <span className="text-amethyst">Einrichtung</span>
+              </h3>
+              <p className="text-coal/55 text-[15px] leading-relaxed mb-6">
+                Qualifizierte Fachkräfte für Ihr Team – schnell, zuverlässig und spezialisiert auf Gesundheit & Soziales.
+              </p>
+
+              <div className="flex flex-wrap gap-1.5 mb-6">
+                {['Zeitarbeit', 'Vermittlung', 'Prozess', 'Vorteile'].map(t => (
+                  <span key={t} className="text-xs text-amethyst bg-amethyst/10 border border-amethyst/15 rounded-md px-2.5 py-1 font-semibold">
+                    {t}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex items-center gap-1.5 text-amethyst font-bold text-sm group-hover:translate-x-1 transition-transform duration-400">
+                Mehr erfahren <ArrowRight className="w-4 h-4" />
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ 4. BEWERBER: JOB PROFILE SLIDER ═══ */}
       <section id="bewerber" className="bg-coal py-20 relative overflow-hidden">
         <div className="absolute bottom-[-15%] left-[-5%] w-[45%] h-[45%] bg-[radial-gradient(circle,rgba(35,210,175,0.08)_0%,transparent_70%)] pointer-events-none" />
 

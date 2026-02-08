@@ -91,14 +91,14 @@ export default function ZeitarbeitPage() {
       {/* Hero Section */}
       <Section variant="amethyst" padding="lg">
         <div className="max-w-4xl">
-          <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 text-coal rounded-full text-sm font-medium mb-6">
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 text-white rounded-full text-sm font-medium mb-6">
             <Building2 size={16} />
             Für Unternehmen
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-coal mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Was ist Zeitarbeit?
           </h1>
-          <p className="text-lg text-coal/80 mb-8 max-w-2xl">
+          <p className="text-lg text-white/80 mb-8 max-w-2xl">
             Zeitarbeit – auch Arbeitnehmerüberlassung genannt – ist ein
             flexibles Personalmodell, bei dem qualifizierte Fachkräfte von einem
             Personaldienstleister an Unternehmen überlassen werden.
@@ -106,7 +106,7 @@ export default function ZeitarbeitPage() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
               href="/kontakt"
-              className="bg-amethyst text-white hover:bg-amethyst-dark"
+              className="bg-white text-amethyst hover:bg-white/90"
             >
               Personal anfragen
               <ArrowRight size={20} className="ml-2" />
@@ -114,7 +114,7 @@ export default function ZeitarbeitPage() {
             <Button
               variant="outline"
               href="/fuer-unternehmen/prozess"
-              className="border-coal text-coal hover:bg-coal hover:text-white"
+              className="border-white text-white hover:bg-white hover:text-amethyst"
             >
               Unser Prozess
             </Button>
@@ -276,16 +276,16 @@ export default function ZeitarbeitPage() {
       {/* CTA */}
       <Section variant="amethyst" padding="lg">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold text-coal mb-4">
+          <h2 className="text-3xl font-bold text-white mb-4">
             Bereit für flexible Personallösungen?
           </h2>
-          <p className="text-coal/70 mb-8">
+          <p className="text-white/70 mb-8">
             Kontaktieren Sie uns und erfahren Sie, wie Zeitarbeit Ihrem
             Unternehmen helfen kann.
           </p>
           <Button
             href="/kontakt"
-            className="bg-amethyst text-white hover:bg-amethyst-dark"
+            className="bg-white text-amethyst hover:bg-white/90"
           >
             Jetzt Kontakt aufnehmen
             <ArrowRight size={20} className="ml-2" />
