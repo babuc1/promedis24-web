@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Send, Check } from "lucide-react";
 import { Section, Card, Button } from "@/components/ui";
@@ -8,7 +9,16 @@ import { Section, Card, Button } from "@/components/ui";
 type FormType = "bewerber" | "unternehmen";
 
 export default function KontaktPage() {
+  const searchParams = useSearchParams();
+  const typeParam = searchParams.get("type");
   const [formType, setFormType] = useState<FormType>("bewerber");
+
+  // Set form type from URL parameter on mount
+  useEffect(() => {
+    if (typeParam === "unternehmen") {
+      setFormType("unternehmen");
+    }
+  }, [typeParam]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({

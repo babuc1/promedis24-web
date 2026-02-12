@@ -321,7 +321,7 @@ export default function ErfolgsgeschichtenPage() {
                 Als Talent bewerben
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-              <Button href="/kontakt" variant="secondary" size="lg">
+              <Button href="/kontakt?type=unternehmen" variant="secondary" size="lg">
                 Als Einrichtung anfragen
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>

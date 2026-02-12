@@ -71,7 +71,7 @@ export default function FuerUnternehmenPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button
-                href="/kontakt"
+                href="/kontakt?type=unternehmen"
                 className="bg-white text-amethyst hover:bg-white/90"
               >
                 Personal anfragen
@@ -219,7 +219,7 @@ export default function FuerUnternehmenPage() {
               24 Stunden bei Ihnen.
             </p>
             <Button
-              href="/kontakt"
+              href="/kontakt?type=unternehmen"
               className="bg-amethyst text-white hover:bg-amethyst-dark"
               fullWidth
             >

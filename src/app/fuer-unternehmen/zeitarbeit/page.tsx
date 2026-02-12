@@ -105,7 +105,7 @@ export default function ZeitarbeitPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
-              href="/kontakt"
+              href="/kontakt?type=unternehmen"
               className="bg-white text-amethyst hover:bg-white/90"
             >
               Personal anfragen
@@ -284,7 +284,7 @@ export default function ZeitarbeitPage() {
             Unternehmen helfen kann.
           </p>
           <Button
-            href="/kontakt"
+            href="/kontakt?type=unternehmen"
             className="bg-white text-amethyst hover:bg-white/90"
           >
             Jetzt Kontakt aufnehmen

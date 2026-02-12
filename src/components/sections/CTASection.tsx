@@ -71,7 +71,7 @@ export function CTASection() {
             <Button
               variant="ghost"
               className="bg-white text-amethyst hover:bg-white/90"
-              href="/kontakt"
+              href="/kontakt?type=unternehmen"
             >
               Personal anfragen
               <ArrowRight size={20} className="ml-2" />

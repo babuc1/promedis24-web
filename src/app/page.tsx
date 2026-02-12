@@ -807,7 +807,7 @@ export default function Homepage() {
                 Ihr Area Manager meldet sich innerhalb von 48 Stunden.
               </p>
               <Link
-                href="/kontakt"
+                href="/kontakt?type=unternehmen"
                 className="inline-flex items-center gap-2 bg-amethyst text-white border-none py-3 px-6 text-sm font-bold cursor-pointer tracking-wide"
               >
                 Personal anfragen <ArrowRight className="w-[13px] h-[13px]" />
@@ -917,7 +917,7 @@ export default function Homepage() {
                 In 60 Sek. bewerben <ArrowRight className="w-[13px] h-[13px]" />
               </Link>
               <Link
-                href="/kontakt"
+                href="/kontakt?type=unternehmen"
                 className="inline-flex items-center gap-2 bg-transparent text-white border border-white/10 py-3.5 px-7 text-sm font-semibold cursor-pointer"
               >
                 Personal anfragen

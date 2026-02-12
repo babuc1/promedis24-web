@@ -154,7 +154,7 @@ export default function PersonalvermittlungPage() {
             – mit Erfolgsgarantie.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button href="/kontakt" variant="primary">
+            <Button href="/kontakt?type=unternehmen" variant="primary">
               Jetzt Fachkraft finden
               <ArrowRight size={20} className="ml-2" />
             </Button>
@@ -347,7 +347,7 @@ export default function PersonalvermittlungPage() {
             perfekten Kandidaten.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/kontakt" variant="primary">
+            <Button href="/kontakt?type=unternehmen" variant="primary">
               Jetzt anfragen
               <ArrowRight size={20} className="ml-2" />
             </Button>

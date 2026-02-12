@@ -327,7 +327,7 @@ export default function ProzessPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              href="/kontakt"
+              href="/kontakt?type=unternehmen"
               className="bg-amethyst text-white hover:bg-amethyst-dark"
             >
               Personal anfragen

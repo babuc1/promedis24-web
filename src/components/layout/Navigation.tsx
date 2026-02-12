@@ -95,7 +95,7 @@ export function Navigation() {
                 Über uns
               </Link>
               <Link
-                href="/kontakt"
+                href={mode === "bewerber" ? "/kontakt" : "/kontakt?type=unternehmen"}
                 className={cn(
                   "inline-flex items-center gap-1.5 px-3.5 py-[7px] rounded-lg text-xs font-bold transition-all",
                   mode === "bewerber"
@@ -190,7 +190,7 @@ export function Navigation() {
               <Button
                 variant={mode === "bewerber" ? "primary" : "secondary"}
                 fullWidth
-                href="/kontakt"
+                href={mode === "bewerber" ? "/kontakt" : "/kontakt?type=unternehmen"}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <Phone className="w-4 h-4 mr-2" />

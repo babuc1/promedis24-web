@@ -237,7 +237,7 @@ export default function SplitHero() {
 
           {/* CTAs */}
           <div className="flex flex-wrap gap-3">
-            <Button href="/kontakt" variant="secondary" size={unternehmenExpanded ? 'lg' : 'md'}>
+            <Button href="/kontakt?type=unternehmen" variant="secondary" size={unternehmenExpanded ? 'lg' : 'md'}>
               Personal anfragen
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>

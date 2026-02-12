@@ -129,7 +129,7 @@ export default function VorteilePage() {
             entdecken Sie, warum über 500 Einrichtungen uns vertrauen.
           </p>
           <Button
-            href="/kontakt"
+            href="/kontakt?type=unternehmen"
             className="bg-amethyst text-white hover:bg-amethyst-dark"
           >
             Jetzt Vorteile nutzen
@@ -309,7 +309,7 @@ export default function VorteilePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              href="/kontakt"
+              href="/kontakt?type=unternehmen"
               className="bg-amethyst text-white hover:bg-amethyst-dark"
             >
               Personal anfragen

@@ -90,7 +90,7 @@ export default async function StandortPage({
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/bewerben">Jetzt bewerben</Button>
-              <Button variant="outline" href="/kontakt">
+              <Button variant="outline" href="/kontakt?type=unternehmen">
                 Kontakt aufnehmen
               </Button>
             </div>
