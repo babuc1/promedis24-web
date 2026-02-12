@@ -54,7 +54,7 @@ export default function FuerUnternehmenPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section variant="amethyst" padding="lg">
+      <Section variant="amethyst-dark" padding="lg">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-block px-4 py-2 bg-white/20 text-white rounded-full text-sm font-medium mb-6">
@@ -72,15 +72,16 @@ export default function FuerUnternehmenPage() {
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button
                 href="/kontakt?type=unternehmen"
-                className="bg-white text-amethyst hover:bg-white/90"
+                variant="ghost"
+                className="bg-white !text-amethyst hover:bg-white/90"
               >
                 Personal anfragen
                 <ArrowRight size={20} className="ml-2" />
               </Button>
               <Button
-                variant="outline"
+                variant="ghost-dark"
                 href="/fuer-unternehmen/prozess"
-                className="border-white text-white hover:bg-white hover:text-amethyst"
+                className="border border-white/30"
               >
                 Unser Prozess
               </Button>

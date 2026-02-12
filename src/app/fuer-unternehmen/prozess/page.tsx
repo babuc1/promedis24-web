@@ -129,7 +129,7 @@ export default function ProzessPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section variant="amethyst" padding="lg">
+      <Section variant="amethyst-dark" padding="lg">
         <div className="max-w-4xl">
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 text-white rounded-full text-sm font-medium mb-6">
             <Building2 size={16} />
@@ -316,7 +316,7 @@ export default function ProzessPage() {
       </Section>
 
       {/* CTA */}
-      <Section variant="amethyst" padding="lg">
+      <Section variant="amethyst-dark" padding="lg">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-4">
             Starten Sie jetzt
@@ -334,9 +334,9 @@ export default function ProzessPage() {
               <ArrowRight size={20} className="ml-2" />
             </Button>
             <Button
-              variant="outline"
+              variant="ghost-dark"
               href="/fuer-unternehmen/vorteile"
-              className="border-white text-white hover:bg-white hover:text-amethyst"
+              className="border border-white/30"
             >
               Ihre Vorteile ansehen
             </Button>

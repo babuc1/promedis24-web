@@ -115,22 +115,23 @@ export default function VorteilePage() {
   return (
     <>
       {/* Hero Section */}
-      <Section variant="amethyst" padding="lg">
+      <Section variant="amethyst-dark" padding="lg">
         <div className="max-w-4xl">
-          <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 text-coal rounded-full text-sm font-medium mb-6">
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 text-white rounded-full text-sm font-medium mb-6">
             <Building2 size={16} />
             Für Unternehmen
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-coal mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ihre Vorteile mit Promedis24
           </h1>
-          <p className="text-lg text-coal/80 mb-8 max-w-2xl">
+          <p className="text-lg text-white/80 mb-8 max-w-2xl">
             Qualifiziertes Personal, persönliche Betreuung, faire Konditionen –
             entdecken Sie, warum über 500 Einrichtungen uns vertrauen.
           </p>
           <Button
             href="/kontakt?type=unternehmen"
-            className="bg-amethyst text-white hover:bg-amethyst-dark"
+            variant="ghost"
+            className="bg-white !text-amethyst hover:bg-white/90"
           >
             Jetzt Vorteile nutzen
             <ArrowRight size={20} className="ml-2" />
@@ -297,28 +298,29 @@ export default function VorteilePage() {
       </Section>
 
       {/* CTA */}
-      <Section variant="amethyst" padding="lg">
+      <Section variant="amethyst-dark" padding="lg">
         <div className="text-center max-w-2xl mx-auto">
-          <Phone size={40} className="mx-auto text-amethyst mb-4" />
-          <h2 className="text-3xl font-bold text-coal mb-4">
+          <Phone size={40} className="mx-auto text-white/80 mb-4" />
+          <h2 className="text-3xl font-bold text-white mb-4">
             Überzeugen Sie sich selbst
           </h2>
-          <p className="text-coal/70 mb-8">
+          <p className="text-white/70 mb-8">
             Lassen Sie uns über Ihren Personalbedarf sprechen – unverbindlich
             und kostenlos.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               href="/kontakt?type=unternehmen"
-              className="bg-amethyst text-white hover:bg-amethyst-dark"
+              variant="ghost"
+              className="bg-white !text-amethyst hover:bg-white/90"
             >
               Personal anfragen
               <ArrowRight size={20} className="ml-2" />
             </Button>
             <Button
-              variant="outline"
+              variant="ghost-dark"
               href="/fuer-unternehmen/prozess"
-              className="border-coal text-coal hover:bg-coal hover:text-white"
+              className="border border-white/30"
             >
               Unser Prozess
             </Button>

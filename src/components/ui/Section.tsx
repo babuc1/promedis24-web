@@ -4,7 +4,7 @@ import { type HTMLAttributes, forwardRef } from "react";
 import { cn } from "@/lib/utils";
 
 export interface SectionProps extends HTMLAttributes<HTMLElement> {
-  variant?: "default" | "coal" | "turkis" | "amethyst" | "grey";
+  variant?: "default" | "coal" | "turkis" | "turkis-dark" | "amethyst" | "amethyst-dark" | "grey";
   container?: boolean;
   padding?: "none" | "sm" | "md" | "lg";
 }
@@ -25,7 +25,9 @@ const Section = forwardRef<HTMLElement, SectionProps>(
       default: "bg-white text-coal",
       coal: "bg-coal text-white",
       turkis: "bg-turkis-light text-coal",
+      "turkis-dark": "bg-turkis text-white",
       amethyst: "bg-amethyst-light text-coal",
+      "amethyst-dark": "bg-amethyst text-white",
       grey: "bg-grey text-coal",
     };
 
