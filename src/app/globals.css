@@ -21,15 +21,16 @@
   --color-primary: var(--color-turkis);
   --color-secondary: var(--color-amethyst);
 
-  /* Fonts - Editorial Healthcare Design */
-  --font-dm-serif: var(--font-dm-serif), Georgia, serif;
-  --font-outfit: var(--font-outfit), system-ui, -apple-system, sans-serif;
+  /* Artex Font Family */
+  --font-artex: "Artex", system-ui, -apple-system, sans-serif;
+  --font-artex-black: "Artex", system-ui, -apple-system, sans-serif;
+  --font-artex-compressed: "Artex Compressed", system-ui, sans-serif;
+  --font-artex-condensed: "Artex Condensed", system-ui, sans-serif;
+  --font-artex-extended: "Artex Extended", system-ui, sans-serif;
 
-  /* Legacy Artex (fallback) */
-  --font-artex: var(--font-outfit), system-ui, -apple-system, sans-serif;
-  --font-artex-black: var(--font-dm-serif), Georgia, serif;
-  --font-artex-compressed: var(--font-outfit), system-ui, sans-serif;
-  --font-artex-extended: var(--font-outfit), system-ui, sans-serif;
+  /* Aliases for compatibility */
+  --font-heading: "Artex", system-ui, sans-serif;
+  --font-body: "Artex", system-ui, sans-serif;
 
   /* Font Sizes */
   --text-xs: 0.75rem;
@@ -67,8 +68,8 @@
   --transition-slow: 500ms;
 }
 
-/* Font Face Declarations - Add actual font files when available */
-/* @font-face {
+/* Artex Font Face Declarations */
+@font-face {
   font-family: "Artex";
   src: url("/fonts/Artex-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -77,7 +78,7 @@
 }
 
 @font-face {
-  font-family: "Artex Black";
+  font-family: "Artex";
   src: url("/fonts/Artex-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
@@ -86,19 +87,27 @@
 
 @font-face {
   font-family: "Artex Compressed";
-  src: url("/fonts/Artex-Compressed.woff2") format("woff2");
-  font-weight: 400;
+  src: url("/fonts/Artex-Compressed-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Artex Condensed";
+  src: url("/fonts/Artex-Condensed-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Artex Extended";
-  src: url("/fonts/Artex-Extended.woff2") format("woff2");
-  font-weight: 400;
+  src: url("/fonts/Artex-Extended-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
-} */
+}
 
 /* Base Styles */
 :root {
@@ -117,25 +126,42 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-outfit);
+  font-family: var(--font-artex);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Editorial Typography */
-.font-serif {
-  font-family: var(--font-dm-serif);
+/* Artex Typography */
+.font-artex {
+  font-family: var(--font-artex);
 }
 
-.font-outfit {
-  font-family: var(--font-outfit);
+.font-artex-black,
+.font-serif {
+  font-family: var(--font-artex);
+  font-weight: 900;
+}
+
+.font-artex-compressed {
+  font-family: var(--font-artex-compressed);
+  font-weight: 700;
+}
+
+.font-artex-condensed {
+  font-family: var(--font-artex-condensed);
+  font-weight: 700;
+}
+
+.font-artex-extended {
+  font-family: var(--font-artex-extended);
+  font-weight: 700;
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-dm-serif);
-  font-weight: 400;
+  font-family: var(--font-artex);
+  font-weight: 900;
   line-height: 1.15;
   /* color removed - let Tailwind classes handle text color */
 }

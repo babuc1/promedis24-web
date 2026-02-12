@@ -51,7 +51,7 @@ export default function KontaktPage() {
               Vielen Dank für Ihre Nachricht. Wir melden uns schnellstmöglich
               bei Ihnen.
             </p>
-            <Button href="/" className="bg-white text-coal hover:bg-white/90">
+            <Button href="/" variant="ghost" className="bg-white !text-coal hover:bg-white/90">
               Zur Startseite
             </Button>
           </motion.div>

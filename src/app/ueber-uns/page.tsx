@@ -158,7 +158,7 @@ export default function UeberUnsPage() {
             Einrichtung mit Personalbedarf – wir freuen uns auf Sie.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/bewerben" className="bg-white text-turkis hover:bg-white/90">
+            <Button href="/bewerben" variant="ghost" className="bg-white !text-turkis hover:bg-white/90">
               Jetzt bewerben
             </Button>
             <Button

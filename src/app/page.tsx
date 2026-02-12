@@ -210,11 +210,22 @@ function JobSlider() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative -mx-8">
+      {/* Left fade gradient */}
+      <div
+        className="absolute left-0 top-0 bottom-0 w-8 z-[5] pointer-events-none"
+        style={{ background: 'linear-gradient(to right, #002D32, transparent)' }}
+      />
+      {/* Right fade gradient */}
+      <div
+        className="absolute right-0 top-0 bottom-0 w-8 z-[5] pointer-events-none"
+        style={{ background: 'linear-gradient(to left, #002D32, transparent)' }}
+      />
+
       {scrollState.l && (
         <button
           onClick={() => scroll(-1)}
-          className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-coal border-2 border-turkis/30 flex items-center justify-center cursor-pointer shadow-lg hover:border-turkis/60 transition-colors"
+          className="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-coal border-2 border-turkis/30 flex items-center justify-center cursor-pointer shadow-lg hover:border-turkis/60 transition-colors"
         >
           <ChevronLeft className="w-[18px] h-[18px] text-turkis" />
         </button>
@@ -222,7 +233,7 @@ function JobSlider() {
       {scrollState.r && (
         <button
           onClick={() => scroll(1)}
-          className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-coal border-2 border-turkis/30 flex items-center justify-center cursor-pointer shadow-lg hover:border-turkis/60 transition-colors"
+          className="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-coal border-2 border-turkis/30 flex items-center justify-center cursor-pointer shadow-lg hover:border-turkis/60 transition-colors"
         >
           <ChevronRight className="w-[18px] h-[18px] text-turkis" />
         </button>
@@ -231,7 +242,7 @@ function JobSlider() {
       <div
         ref={scrollRef}
         onScroll={checkScroll}
-        className="flex gap-[18px] overflow-x-auto snap-x snap-mandatory pb-2 scrollbar-hide"
+        className="flex gap-[18px] overflow-x-auto snap-x snap-mandatory pt-4 pb-4 px-8 scrollbar-hide"
         style={{ scrollbarWidth: "none" }}
       >
         {jobs.map((job, idx) => (
@@ -337,7 +348,7 @@ function JobSlider() {
           </div>
         ))}
       </div>
-      <div className="text-center mt-5">
+      <div className="text-center mt-3 px-8">
         <span className="text-white/[0.12] text-[11px] font-medium tracking-wide">
           ← {jobs.length} Stellenprofile →
         </span>
@@ -530,29 +541,29 @@ export default function Homepage() {
       </section>
 
       {/* ═══ TRUST BAR ═══ */}
-      <section className="bg-white border-b border-coal/[0.04] relative">
-        <div className="max-w-[1120px] mx-auto px-8 py-5 flex items-center justify-between">
+      <section className="bg-coal border-y border-white/[0.06] relative">
+        <div className="max-w-[1120px] mx-auto px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-1.5">
-            <span className="font-serif text-lg text-coal">4,6</span>
+            <span className="font-serif text-lg text-white">4,6</span>
             <div className="flex gap-0.5">
               {[1, 2, 3, 4, 5].map((i) => (
                 <span
                   key={i}
                   className="text-xs"
-                  style={{ color: i <= 4 ? "#F4B740" : "rgba(244,183,64,0.4)" }}
+                  style={{ color: i <= 4 ? "#F4B740" : "rgba(244,183,64,0.3)" }}
                 >
                   ★
                 </span>
               ))}
             </div>
-            <span className="text-[11px] text-coal/30 font-medium ml-1">auf Indeed</span>
+            <span className="text-[11px] text-white/30 font-medium ml-1">auf Indeed</span>
           </div>
-          <div className="text-[11px] text-coal/20 font-medium tracking-[0.1em]">
+          <div className="text-[11px] text-white/15 font-medium tracking-[0.1em]">
             PFLEGE · PÄDAGOGIK · MEDIZIN
           </div>
           <div className="flex items-center gap-1.5">
-            <MapPin className="w-3 h-3 text-coal/20" />
-            <span className="text-[11px] text-coal/30 font-medium">18 Standorte bundesweit</span>
+            <MapPin className="w-3 h-3 text-white/20" />
+            <span className="text-[11px] text-white/30 font-medium">18 Standorte bundesweit</span>
           </div>
         </div>
       </section>

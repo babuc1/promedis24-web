@@ -118,7 +118,7 @@ export default function BewerbenPage() {
               Vielen Dank für deine Bewerbung, {formData.name}! Wir melden uns
               innerhalb von 24 Stunden bei dir.
             </p>
-            <Button href="/" className="bg-white text-turkis hover:bg-white/90">
+            <Button href="/" variant="ghost" className="bg-white !text-turkis hover:bg-white/90">
               Zur Startseite
             </Button>
           </motion.div>
